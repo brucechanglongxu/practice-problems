@@ -21,7 +21,7 @@ except:
     print("Input value cannot be cast to an int")
     exit()
 
-def expected_value(b, r):
+def expected_value(int: b, int: r) -> int:
     "If either r or b is negative, then we cannot return a valid expected value"
     if (r < 0 or b < 0):
         print("Number of red and black cards must both be non-negative")

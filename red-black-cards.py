@@ -1,3 +1,7 @@
+#Problem Statement: "You are given a standard deck of cards with 26 black cards and 26 red cards. You're now going to play a game: 
+#in every round, you can take one of two actions: you can stop playing, or you can draw another card. If you draw another card and 
+#it's red, you get one dollar. If you draw another card and it's black, you lose one dollar. What is the expected value of this game?"
+
 import math
 
 black = int(input('How many black cards are there?\n'))

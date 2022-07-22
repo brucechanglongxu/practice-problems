@@ -1,7 +1,6 @@
 
 
 ### MDP Value Iteration and Policy Iteratoin
-# You might not need to use all parameters
 
 import numpy as np
 import gym
@@ -13,7 +12,7 @@ import random
 np.set_printoptions(precision=3)
 
 def isover(V,V_new,tol):
-	if np.all(np.abs(V - V_new) < tol) :    #np.sum(np.sqrt(np.square(V_new-V))) < tol
+	if np.all(np.abs(V - V_new) < tol) :  
 		return 1
 	return 0
 
@@ -128,15 +127,12 @@ def policy_iteration(P, nS, nA, gamma=0.9, max_iteration=20, tol=1e-3):
 	for s in range(nS):
 		policy[s]=s%nA
 	for i in range(max_iteration):
-		V_new=policy_evaluation(P, nS, nA, policy, gamma)
-		policy_new=policy_improvement(P, nS, nA, V_new, policy, gamma)
+		V_new = policy_evaluation(P, nS, nA, policy, gamma)
+		policy_new = policy_improvement(P, nS, nA, V_new, policy, gamma)
 		if isover(V,V_new,tol) :
 			break
-		V=V_new.copy()
-		policy=policy_new.copy()
-	############################
-	# YOUR IMPLEMENTATION HERE #
-	############################
+		V = V_new.copy()
+		policy = policy_new.copy()
 	return V, policy
 
 def value_iteration(P, nS, nA, gamma=0.9, max_iteration=20, tol=1e-3):
@@ -166,10 +162,10 @@ def value_iteration(P, nS, nA, gamma=0.9, max_iteration=20, tol=1e-3):
 	V = np.zeros(nS,dtype=float)
 	policy = np.zeros(nS, dtype=int)
 	for i in range(max_iteration):
-		V_next=np.zeros(nS,dtype=float)
+		V_next = np.zeros(nS,dtype=float)
 		for s in range(nS):
 			for a in range(nA):
-				q=0
+				q = 0
 				for probability, nextstate, reward, terminal in P[s][a]:
 					q += probability * (reward + gamma * V[nextstate])
 				if V_next[s] < q:
@@ -177,7 +173,7 @@ def value_iteration(P, nS, nA, gamma=0.9, max_iteration=20, tol=1e-3):
 		if isover(V,V_next,tol):
 			break
 		V = V_next.copy()
-	policy=policy_improvement(P, nS, nA, V_next, policy, gamma)
+	policy = policy_improvement(P, nS, nA, V_next, policy, gamma)
 	############################
 	# YOUR IMPLEMENTATION HERE #
 	############################
@@ -214,7 +210,6 @@ def render_single(env, policy):
 		Policy: np.array of shape [env.nS]
 			The action to take at a given state
 	"""
-
 	episode_reward = 0
 	ob = env.reset()
 	for t in range(100):
@@ -229,8 +224,6 @@ def render_single(env, policy):
 	env.render();
 	print("Episode reward: %f" % episode_reward)
 
-
-# Feel free to run your own debug code in main!
 # Play around with these hyperparameters.
 if __name__ == "__main__":
 	env = gym.make("Stochastic-4x4-FrozenLake-v0")

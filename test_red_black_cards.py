@@ -1,7 +1,7 @@
 import unittest
 from red_black_cards import expected_value
 
-class testGame(unittest.TestCase):
+class test_game(unittest.TestCase):
     def test_game1(self):
         value = expected_value(1, 1)
         self.assertEqual(value, 0.5)

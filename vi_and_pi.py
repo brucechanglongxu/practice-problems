@@ -85,14 +85,23 @@ def policy_improvement(P, nS, nA, value_from_policy, policy, gamma=0.9):
     # YOUR IMPLEMENTATION HERE #
     ############################
     P_new = np.zeros(nS, dtype=int)
+    # Iterate through all of the possible states
     for state in range(nS):
+        # Represents the value of taking a particular action from a particular state 
         B = np.zeros(nA, dtype=float)
         q = -float("inf")
+        # For all of the possible actions that we can take from this state
         for action in range(nA):
+            # We obtain the probability of taking this action from aforementioned state,
+            # the next state that we would transition to under this action
+            # the reward for taking this action from this state
             for probability, nextstate, reward, terminal in P[state][action]:
+                # The value of this action is incremented by the  weighted (according to the probability
+                # of taking this action from our current state) reward  
                 B[action] += probability * (
                     reward + gamma * value_from_policy[nextstate]
                 )
+           # We require this to be some non-trivial value in order to alter our policy for this new action. 
             if B[action] > q:
                 q = B[action]
                 P_new[state] = action

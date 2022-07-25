@@ -87,7 +87,7 @@ def policy_improvement(P, nS, nA, value_from_policy, policy, gamma=0.9):
     P_new = np.zeros(nS, dtype=int)
     for state in range(nS):
         B = np.zeros(nA, dtype=float)
-        q = -99
+        q = -float("inf")
         for action in range(nA):
             for probability, nextstate, reward, terminal in P[state][action]:
                 B[action] += probability * (

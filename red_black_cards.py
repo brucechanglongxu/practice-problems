@@ -3,7 +3,6 @@
 # it's red, you get one dollar. If you draw another card and it's black, you lose one dollar. What is the expected value of this game?"
 
 import math 
-input_invalid = False
 
 def expected_value(b, r) -> int:
     """
@@ -19,9 +18,6 @@ def expected_value(b, r) -> int:
     if r < 0 or b < 0:
         print("Number of red and black cards must both be non-negative")
         return -1
-    if (input_invalid == True):
-        print("Invalid Input Parameter")
-        return -1 
     # If r is 0, then we know that the optimal strategy would be to never draw a single card"
     if r == 0:
         return 0
@@ -41,14 +37,9 @@ def expected_value(b, r) -> int:
 
 if __name__ == "__main__":
     try:
-        black = int(input("How many black cards are there\n"))
-    except:
-        print("Input value cannot be cast to an int")
-        input_invalid = True
-    try:
+        black = int(input("How many black cards are there?\n"))
         red = int(input("How many red cards are there?\n"))
+        print("The expected value that you would obtain is the following:")
+        print(expected_value(black, red))
     except:
         print("Input value cannot be cast to an int")
-        input_invalid = True
-    print("The expected value that you would obtain is the following:")
-    print(expected_value(black, red))

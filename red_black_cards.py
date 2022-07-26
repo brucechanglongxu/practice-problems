@@ -41,5 +41,5 @@ if __name__ == "__main__":
         red = int(input("How many red cards are there?\n"))
         print("The expected value that you would obtain is the following:")
         print(expected_value(black, red))
-    except:
+    except ValueError:
         print("Input value cannot be cast to an int")

@@ -10,6 +10,7 @@ class Solution(object):
         :type k: int
         :rtype: ListNode
         """
+        # counts the number of nodes in the linked list
         n = 1
         a = head
         if (head is None):
@@ -17,32 +18,33 @@ class Solution(object):
         while (a.next):    
             a = a.next
             n += 1
-        # counts the number of nodes in the linked list
         
         if (k % n == 0): 
             return head
-        k = k % n
         # ensures k is less than n to avoid repetition
-        k = n - k
+        k = k % n
         # to rotate anti-clockwise rather than clockwise
+        k = n - k
         
+        # x will point to the kth node
         x = head
         count = 1 
         while(count < k and x is not None):
             x = x.next
             count += 1
-        # x will point to the kth node
         NodeK = x
     
+        # x is now the last node after the loop
         while (x is not None and x.next is not None):
             x = x.next 
-        # x is now the last node after the loop
 
-        x.next = head 
         # changing the node after the last node to be head
-        
-        head = NodeK.next # changes the head to be the (k + 1)th node
+        x.next = head 
 
-        NodeK.next = None # the node after the kth node should be null
+        # changes the head to be the (k + 1)th node
+        head = NodeK.next 
+
+        # the node after the kth node should be null
+        NodeK.next = None 
 
         return head

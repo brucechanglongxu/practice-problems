@@ -34,35 +34,3 @@ class Solution:
             if (len1 + len2) % 2 == 0
             else first_largest
         )
-
-# TODO: remove
-if __name__ == "__main__":
-    # 3 yes
-    # arr1 = [1, 3]
-    # arr2 = [2, 4, 5]
-    # 10 yes
-    # arr1 = [900]
-    # arr2 = [5, 8, 10, 15]
-    # 3 yes
-    # arr1 = [1, 2]
-    # arr2 = [3, 4, 5]
-    # 3.5
-    # arr1 = [1, 2, 6]
-    # arr2 = [3, 4, 5]
-    # 1.5
-    # arr1 = [1]
-    # arr2 = [2]
-    # 3.5
-    # arr1 = [2, 4, 6]
-    # arr2 = [1, 3, 5]
-    # 1
-    # arr1 = [1]
-    # arr2 = []
-    # 2
-    # arr1 = [1, 2, 3]
-    # arr2 = []
-    # 1
-    arr1 = [1, 1, 1]
-    arr2 = [1, 1, 1]
-    sol = Solution()
-    print(sol.find_median_sorted_arrays(arr1, arr2))

@@ -1,6 +1,6 @@
 class Solution:
     """
-    Class for the solution to LeetCode Problem 31: Longest Valid Parentheses
+    Class for the solution to LeetCode Problem 32: Longest Valid Parentheses
     """
 
     def longest_valid_parentheses(self, s: str = "(()") -> int:

@@ -2,7 +2,7 @@
 # you must implement an algorithm than runs in O(n) time and uses constant extra space
 # https://leetcode.com/problems/first-missing-positive/
 
-# Naive Solution
+# Naive Solution, where we first sort our array
 def first_missing_number(nums):
   # If there are no integers in our array, then the smallest
   # missing positive integer is equal to 1

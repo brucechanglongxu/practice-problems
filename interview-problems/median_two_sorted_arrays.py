@@ -1,33 +1,36 @@
-class Solution(object):
-    def findMedianSortedArrays(self, nums1, nums2):
+class Solution:
+    def find_median_sorted_arrays(self, nums1: list[int], nums2: list[int]) -> float:
         """
-        :type nums1: List[int]
-        :type nums2: List[int]
-        :rtype: float
-        """
-        # O( (m + n) log (m + n)) -> O(log (m + n))
-        # An even number of elements m + n is even
-        # [e1, e2], [f1, f2] --> [e1, f1, e2, f2]
-        fullnums = nums1 + nums2
-        fullnums.sort()
-        x = len(fullnums) // 2
-        if len(fullnums) % 2 == 0:
-            z = (fullnums[x] + fullnums[x - 1]) // 2
-            return z
-        else:
-            z = fullnums[x]
-            return z
+        Finds and returns the median of two sorted arrays.
 
-        # Linear time solution 
-        # [1, 2, 4] and [3, 5, 6]
-        # Store some intermediate values that will help us keep track of whether we have reached the median or not
-        # There is one such value for each of the two arrays 
-        # We keep an index for array 1, and keep an index for array 2
-        # And we compare the element and each of indexes for their respective arrays
-        # and increment the index for which we obtain the smaller element
-        # and iterate until we have made (m + n) / 2 comparisons
-        
-        # 1. What happens if the arrays *aren't sorted*, what is the best time complexity we can achieve in this case?
-        # 2. Think about how you would implement this solution above in you language of choice
-        # 3. How would we push this further to O(log (m + n))
-        
+        :param nums1: First sorted array
+        :param nums2: Second sorted array
+        :return: median of the two sorted arrays
+        """
+        len1, len2 = len(nums1), len(nums2)
+        # these indices will point to the current smallest values in each array
+        nums1_idx = nums2_idx = 0
+        # since we sort the values in the arrays as we go, these variables hold the two largest values we've seen so far
+        first_largest = second_largest = 0
+
+        # iterate until we reach the middle of the merged array
+        for _ in range((len1 + len2) // 2 + 1):
+            # since we are going to modify the largest value we've seen, it now becomes the second largest
+            second_largest = first_largest
+            # passing these conditions indicates that the next highest number is in nums1
+            if nums2_idx == len2 or (
+                nums1_idx != len1 and nums1[nums1_idx] <= nums2[nums2_idx]
+            ):
+                first_largest = nums1[nums1_idx]
+                nums1_idx += 1
+            # reaching here indicates that the next highest number is in nums2
+            else:
+                first_largest = nums2[nums2_idx]
+                nums2_idx += 1
+
+        # return the average of the two largest values if the merged array has an even number of elements, else return the largest value
+        return (
+            (first_largest + second_largest) / 2
+            if (len1 + len2) % 2 == 0
+            else first_largest
+        )

@@ -18,7 +18,8 @@ class Solution:
             The index of the first missing postitive number
         """
         
-        # adding 0 to the end of the list to ensure that the nums array doesn't iterate beyond the given values
+        # adding 0 to the end of the list in the case that all the numbers are consecutive and smallest positive numbers
+        # the function will then return the value that is greater than all of these values
         nums.append(0) 
         n = len(nums)
         

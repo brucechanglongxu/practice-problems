@@ -15,7 +15,7 @@ class Solution:
         Returns
         -------
         i : int
-            The index of the first missing postitive number
+            The index of the first missing positive number
         """
         
         # adding 0 to the end of the list in the case that all the numbers are consecutive and smallest positive numbers

@@ -47,6 +47,7 @@ class Solution:
 
         n = n + m
         if n % 2 == 1:
-            return finalArray[floor( floor(n + 1) / 2) - 1]
+            median = finalArray[(n+1) // 2 - 1]
         else:
-            return float((finalArray[(floor(n / 2)) - 1]) + float(finalArray[floor(n / 2)]))/ 2
+            median = float(finalArray[n //2 - 1] + finalArray[n // 2])/ 2
+        return median

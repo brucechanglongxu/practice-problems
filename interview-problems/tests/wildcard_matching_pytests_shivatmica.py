@@ -87,7 +87,7 @@ def test_case_5(sol = wildcard_matching_shivatmica.Solution()) -> None:
     None
     """
     s = "testcase"
-    p = "*e?t?ca??"
+    p = "*e?t?a??"
     assert sol.isMatch(s, p) == True 
     
 def test_case_6(sol = wildcard_matching_shivatmica.Solution()) -> None:

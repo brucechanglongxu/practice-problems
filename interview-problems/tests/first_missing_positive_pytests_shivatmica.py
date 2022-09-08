@@ -16,7 +16,7 @@ def test_case_1(sol: first_missing_positive_shivatmica.Solution) -> None:
     None
     """
     nums = [0, 0, 0]
-    assert sol.first_missing_positive(nums) == 1
+    assert sol.firstMissingPositive(nums) == 1
 
 def test_case_2(sol: first_missing_positive_shivatmica.Solution) -> None:
     """
@@ -33,7 +33,7 @@ def test_case_2(sol: first_missing_positive_shivatmica.Solution) -> None:
     None
     """
     nums = [1, -1]
-    assert sol.first_missing_positive(nums) == 2
+    assert sol.firstMissingPositive(nums) == 2
 
 def test_case_3(sol: first_missing_positive_shivatmica.Solution) -> None:
     """
@@ -50,7 +50,7 @@ def test_case_3(sol: first_missing_positive_shivatmica.Solution) -> None:
     None
     """
     nums = [7, 7]
-    assert sol.first_missing_positive(nums) == 1
+    assert sol.firstMissingPositive(nums) == 1
 
 def test_case_4(sol: first_missing_positive_shivatmica.Solution) -> None:
     """
@@ -67,7 +67,7 @@ def test_case_4(sol: first_missing_positive_shivatmica.Solution) -> None:
     None
     """
     nums = [1, 2, 3, 4, 5]
-    assert sol.first_missing_positive(nums) == 6
+    assert sol.firstMissingPositive(nums) == 6
 
 def test_case_5(sol: first_missing_positive_shivatmica.Solution) -> None:
     """
@@ -84,7 +84,7 @@ def test_case_5(sol: first_missing_positive_shivatmica.Solution) -> None:
     None
     """
     nums = [-3, 5, -2, 0, -1, -4, 4, 3, 1]
-    assert sol.first_missing_positive(nums) == 2
+    assert sol.firstMissingPositive(nums) == 2
 
 def test_case_6(sol: first_missing_positive_shivatmica.Solution) -> None:
     """
@@ -101,7 +101,7 @@ def test_case_6(sol: first_missing_positive_shivatmica.Solution) -> None:
     None
     """
     nums = list(range(10**5))
-    assert sol.first_missing_positive(nums) == 10**5
+    assert sol.firstMissingPositive(nums) == 10**5
 
 def test_case_7(sol: first_missing_positive_shivatmica.Solution) -> None:
     """
@@ -118,7 +118,7 @@ def test_case_7(sol: first_missing_positive_shivatmica.Solution) -> None:
     None
     """
     nums = [-(2**31), (2**31) - 1, 3, 1, 4]
-    assert sol.first_missing_positive(nums) == 2
+    assert sol.firstMissingPositive(nums) == 2
 
 def test_case_8(sol: first_missing_positive_shivatmica.Solution) -> None:
     """
@@ -135,7 +135,7 @@ def test_case_8(sol: first_missing_positive_shivatmica.Solution) -> None:
     None
     """
     nums = [1, 2, 0]
-    assert sol.first_missing_positive(nums) == 3
+    assert sol.firstMissingPositive(nums) == 3
 
 def test_case_9(sol: first_missing_positive_shivatmica.Solution) -> None:
     """
@@ -152,7 +152,7 @@ def test_case_9(sol: first_missing_positive_shivatmica.Solution) -> None:
     None
     """
     nums = [3, 4, -1, 1]
-    assert sol.first_missing_positive(nums) == 1
+    assert sol.firstMissingPositive(nums) == 2
 
 def test_case_10(sol: first_missing_positive_shivatmica.Solution) -> None:
     """
@@ -169,7 +169,7 @@ def test_case_10(sol: first_missing_positive_shivatmica.Solution) -> None:
     None
     """
     nums = [7, 8, 9, 11, 12]
-    assert sol.first_missing_positive(nums) == 1
+    assert sol.firstMissingPositive(nums) == 1
 
 def main() -> None:
     """

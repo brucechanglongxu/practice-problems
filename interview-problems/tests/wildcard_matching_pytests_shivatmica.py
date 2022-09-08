@@ -17,7 +17,7 @@ def test_case_1(sol: wildcard_matching_shivatmica.Solution) -> None:
     """
     s = ""
     p = ""
-    assert sol.wildcard_matching_shivatmica(s, p) == True
+    assert sol.isMatch(s, p) == True
     
 def test_case_2(sol: wildcard_matching_shivatmica.Solution) -> None:
     """
@@ -35,7 +35,7 @@ def test_case_2(sol: wildcard_matching_shivatmica.Solution) -> None:
     """
     s = "testcase"
     p = "****"
-    assert sol.wildcard_matching_shivatmica(s, p) == True
+    assert sol.isMatch(s, p) == True
     
 def test_case_3(sol: wildcard_matching_shivatmica.Solution) -> None:
     """
@@ -53,7 +53,7 @@ def test_case_3(sol: wildcard_matching_shivatmica.Solution) -> None:
     """
     s = "testcase"
     p = "????????"
-    assert sol.wildcard_matching_shivatmica(s, p) == True
+    assert sol.isMatch(s, p) == True
 
 def test_case_4(sol: wildcard_matching_shivatmica.Solution) -> None:
     """
@@ -71,7 +71,7 @@ def test_case_4(sol: wildcard_matching_shivatmica.Solution) -> None:
     """
     s = "testcase"
     p = "testcase"
-    assert sol.wildcard_matching_shivatmica(s, p) == True
+    assert sol.isMatch(s, p) == True
     
 def test_case_5(sol: wildcard_matching_shivatmica.Solution) -> None:
     """
@@ -89,7 +89,7 @@ def test_case_5(sol: wildcard_matching_shivatmica.Solution) -> None:
     """
     s = "testcase"
     p = "*e?t?ca??"
-    assert sol.wildcard_matching_shivatmica(s, p) == True 
+    assert sol.isMatch(s, p) == True 
     
 def test_case_6(sol: wildcard_matching_shivatmica.Solution) -> None:
     """
@@ -107,7 +107,7 @@ def test_case_6(sol: wildcard_matching_shivatmica.Solution) -> None:
     """
     s = "a" * 2000
     p = "***"
-    assert sol.wildcard_matching_shivatmica(s, p) == True
+    assert sol.isMatch(s, p) == True
     
 
 def test_case_7(sol: wildcard_matching_shivatmica.Solution) -> None:
@@ -126,7 +126,7 @@ def test_case_7(sol: wildcard_matching_shivatmica.Solution) -> None:
     """
     s = "aa"
     p = "a"
-    assert sol.wildcard_matching_shivatmica(s, p) == False
+    assert sol.isMatch(s, p) == False
 
 def test_case_8(sol: wildcard_matching_shivatmica.Solution) -> None:
     """
@@ -144,7 +144,7 @@ def test_case_8(sol: wildcard_matching_shivatmica.Solution) -> None:
     """
     s = "aa"
     p = "*"
-    assert sol.wildcard_matching_shivatmica(s, p) == True
+    assert sol.isMatch(s, p) == True
     
 def test_case_9(sol: wildcard_matching_shivatmica.Solution) -> None:
     """
@@ -162,7 +162,7 @@ def test_case_9(sol: wildcard_matching_shivatmica.Solution) -> None:
     """
     s = "cb"
     p = "?a"
-    assert sol.wildcard_matching_shivatmica(s, p) == False
+    assert sol.isMatch(s, p) == False
     
 def test_case_10(sol: wildcard_matching_shivatmica.Solution) -> None:
     """
@@ -180,7 +180,7 @@ def test_case_10(sol: wildcard_matching_shivatmica.Solution) -> None:
     """
     s = "adceb"
     p = "*a*b"
-    assert sol.wildcard_matching_shivatmica(s, p) == True
+    assert sol.isMatch(s, p) == True
 
 def main() -> None:
     """

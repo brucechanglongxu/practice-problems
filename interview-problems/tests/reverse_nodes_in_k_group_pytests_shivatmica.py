@@ -18,8 +18,8 @@ def ll_to_l(linked_list):
     list = []
     a = linked_list
 
-    while linked_list:
-        list.append(a.val)
+    while a:
+        list.append(a)
         a = a.next
     return list
 

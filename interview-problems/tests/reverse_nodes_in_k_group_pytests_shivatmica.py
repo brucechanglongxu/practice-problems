@@ -11,7 +11,7 @@ def l_to_ll(list):
         linked_list = linked_list.next
     return a.next
   
-def ll_to_l(linked_list):
+def ll_to_l(linked_list: reverse_nodes_in_k_group_shivatmica.ListNode()):
     """
     Converts a linked list into a list
     """

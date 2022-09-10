@@ -1,7 +1,7 @@
-from interview_problems import longest_valid_parentheses_adarsh
+from interview_problems_adarsh import longest_valid_parentheses
 
 
-def test_case_1(sol: longest_valid_parentheses_adarsh.Solution) -> None:
+def test_case_1(sol: longest_valid_parentheses.Solution) -> None:
     """
     Test case. Create an input string with two consecutive matching parentheses. Note that this is LeetCode example test case 1.
 
@@ -14,7 +14,7 @@ def test_case_1(sol: longest_valid_parentheses_adarsh.Solution) -> None:
     assert sol.longest_valid_parentheses(input_str) == 2
 
 
-def test_case_2(sol: longest_valid_parentheses_adarsh.Solution) -> None:
+def test_case_2(sol: longest_valid_parentheses.Solution) -> None:
     """
     Test case. Create an input string four consecutive matching parentheses. Note that this is LeetCode example test case 2.
 
@@ -27,7 +27,7 @@ def test_case_2(sol: longest_valid_parentheses_adarsh.Solution) -> None:
     assert sol.longest_valid_parentheses(input_str) == 4
 
 
-def test_case_3(sol: longest_valid_parentheses_adarsh.Solution) -> None:
+def test_case_3(sol: longest_valid_parentheses.Solution) -> None:
     """
     Test case. Create an empty input string. Note that this is LeetCode example test case 3.
 
@@ -40,7 +40,7 @@ def test_case_3(sol: longest_valid_parentheses_adarsh.Solution) -> None:
     assert sol.longest_valid_parentheses(input_str) == 0
 
 
-def test_case_4(sol: longest_valid_parentheses_adarsh.Solution) -> None:
+def test_case_4(sol: longest_valid_parentheses.Solution) -> None:
     """
     Test case. Create an input string with only open parentheses.
 
@@ -53,7 +53,7 @@ def test_case_4(sol: longest_valid_parentheses_adarsh.Solution) -> None:
     assert sol.longest_valid_parentheses(input_str) == 0
 
 
-def test_case_5(sol: longest_valid_parentheses_adarsh.Solution) -> None:
+def test_case_5(sol: longest_valid_parentheses.Solution) -> None:
     """
     Test case. Create an input string with only closed parentheses.
 
@@ -66,7 +66,7 @@ def test_case_5(sol: longest_valid_parentheses_adarsh.Solution) -> None:
     assert sol.longest_valid_parentheses(input_str) == 0
 
 
-def test_case_6(sol: longest_valid_parentheses_adarsh.Solution) -> None:
+def test_case_6(sol: longest_valid_parentheses.Solution) -> None:
     """
     Test case. Create an input string with the maximum number of parentheses (3 * 10**4). This means 15000 pairs of open and close parentheses.
 
@@ -85,7 +85,7 @@ def main() -> None:
 
     :return: None
     """
-    sol = longest_valid_parentheses_adarsh.Solution()
+    sol = longest_valid_parentheses.Solution()
     test_case_1(sol)
     test_case_2(sol)
     test_case_3(sol)

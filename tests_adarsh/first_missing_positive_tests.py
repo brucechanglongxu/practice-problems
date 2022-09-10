@@ -1,7 +1,7 @@
-from interview_problems import first_missing_positive_adarsh
+from interview_problems_adarsh import first_missing_positive
 
 
-def test_case_1(sol: first_missing_positive_adarsh.Solution) -> None:
+def test_case_1(sol: first_missing_positive.Solution) -> None:
     """
     Test case. Create an unsorted integer array with 0 and the first two smallest positive integers. Note that this is LeetCode example test case 1.
 
@@ -14,7 +14,7 @@ def test_case_1(sol: first_missing_positive_adarsh.Solution) -> None:
     assert sol.first_missing_positive(nums) == 3
 
 
-def test_case_2(sol: first_missing_positive_adarsh.Solution) -> None:
+def test_case_2(sol: first_missing_positive.Solution) -> None:
     """
     Test case. Create an unsorted integer array with -1 and the first four smallest positive integers except the number two. Note that this is LeetCode example test case 2.
 
@@ -27,7 +27,7 @@ def test_case_2(sol: first_missing_positive_adarsh.Solution) -> None:
     assert sol.first_missing_positive(nums) == 2
 
 
-def test_case_3(sol: first_missing_positive_adarsh.Solution) -> None:
+def test_case_3(sol: first_missing_positive.Solution) -> None:
     """
     Test case. Create a sorted integer array with five positive integers that are out of range. Note that this is LeetCode example test case 3.
 
@@ -40,7 +40,7 @@ def test_case_3(sol: first_missing_positive_adarsh.Solution) -> None:
     assert sol.first_missing_positive(nums) == 1
 
 
-def test_case_4(sol: first_missing_positive_adarsh.Solution) -> None:
+def test_case_4(sol: first_missing_positive.Solution) -> None:
     """
     Test case. Create a sorted integer array with -1 and two positive integers that are out of range.
 
@@ -53,7 +53,7 @@ def test_case_4(sol: first_missing_positive_adarsh.Solution) -> None:
     assert sol.first_missing_positive(nums) == 1
 
 
-def test_case_5(sol: first_missing_positive_adarsh.Solution) -> None:
+def test_case_5(sol: first_missing_positive.Solution) -> None:
     """
     Test case. Create an unsorted integer array with the first three smallest positive integers.
 
@@ -66,7 +66,7 @@ def test_case_5(sol: first_missing_positive_adarsh.Solution) -> None:
     assert sol.first_missing_positive(nums) == 4
 
 
-def test_case_6(sol: first_missing_positive_adarsh.Solution) -> None:
+def test_case_6(sol: first_missing_positive.Solution) -> None:
     """
     Test case. Create an unsorted integer array with -1, 0, and the first five smallest positive integers.
 
@@ -79,7 +79,7 @@ def test_case_6(sol: first_missing_positive_adarsh.Solution) -> None:
     assert sol.first_missing_positive(nums) == 6
 
 
-def test_case_7(sol: first_missing_positive_adarsh.Solution) -> None:
+def test_case_7(sol: first_missing_positive.Solution) -> None:
     """
     Test case. Create an unsorted integer array with 0 and the unsorted first two smallest positive integers.
 
@@ -92,7 +92,7 @@ def test_case_7(sol: first_missing_positive_adarsh.Solution) -> None:
     assert sol.first_missing_positive(nums) == 3
 
 
-def test_case_8(sol: first_missing_positive_adarsh.Solution) -> None:
+def test_case_8(sol: first_missing_positive.Solution) -> None:
     """
     Test case. Create an integer array with two of the same positive integer.
 
@@ -105,7 +105,7 @@ def test_case_8(sol: first_missing_positive_adarsh.Solution) -> None:
     assert sol.first_missing_positive(nums) == 1
 
 
-def test_case_9(sol: first_missing_positive_adarsh.Solution) -> None:
+def test_case_9(sol: first_missing_positive.Solution) -> None:
     """
     Test case. Create an unsorted integer array with 0, two ones, and two twos.
 
@@ -118,7 +118,7 @@ def test_case_9(sol: first_missing_positive_adarsh.Solution) -> None:
     assert sol.first_missing_positive(nums) == 3
 
 
-def test_case_10(sol: first_missing_positive_adarsh.Solution) -> None:
+def test_case_10(sol: first_missing_positive.Solution) -> None:
     """
     Test case. Create an integer array with all zeros.
 
@@ -131,7 +131,7 @@ def test_case_10(sol: first_missing_positive_adarsh.Solution) -> None:
     assert sol.first_missing_positive(nums) == 1
 
 
-def test_case_11(sol: first_missing_positive_adarsh.Solution) -> None:
+def test_case_11(sol: first_missing_positive.Solution) -> None:
     """
     Test case. Create an integer array with only -1.
 
@@ -144,7 +144,7 @@ def test_case_11(sol: first_missing_positive_adarsh.Solution) -> None:
     assert sol.first_missing_positive(nums) == 1
 
 
-def test_case_12(sol: first_missing_positive_adarsh.Solution) -> None:
+def test_case_12(sol: first_missing_positive.Solution) -> None:
     """
     Test case. Create an unsorted integer array with only 1.
 
@@ -157,7 +157,7 @@ def test_case_12(sol: first_missing_positive_adarsh.Solution) -> None:
     assert sol.first_missing_positive(nums) == 2
 
 
-def test_case_13(sol: first_missing_positive_adarsh.Solution) -> None:
+def test_case_13(sol: first_missing_positive.Solution) -> None:
     """
     Test case. Create an sorted integer array with maximum allowed length (10**5).
 
@@ -170,7 +170,7 @@ def test_case_13(sol: first_missing_positive_adarsh.Solution) -> None:
     assert sol.first_missing_positive(nums) == 10**5 + 1
 
 
-def test_case_14(sol: first_missing_positive_adarsh.Solution) -> None:
+def test_case_14(sol: first_missing_positive.Solution) -> None:
     """
     Test case. Create an unsorted integer array with the lowest and highest allowed integers.
 
@@ -189,7 +189,7 @@ def main() -> None:
 
     :return: None
     """
-    sol = first_missing_positive_adarsh.Solution()
+    sol = first_missing_positive.Solution()
     test_case_1(sol)
     test_case_2(sol)
     test_case_3(sol)

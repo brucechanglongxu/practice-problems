@@ -1,7 +1,7 @@
-from interview_problems import wildcard_matching_adarsh
+from interview_problems_adarsh import wildcard_matching
 
 
-def test_case_1(sol: wildcard_matching_adarsh.Solution) -> None:
+def test_case_1(sol: wildcard_matching.Solution) -> None:
     """
     Test case. Create an input string and pattern string with distinct characters that don't have the same length. Note that this is LeetCode example test case 1.
 
@@ -15,7 +15,7 @@ def test_case_1(sol: wildcard_matching_adarsh.Solution) -> None:
     assert sol.is_match(s, p) == False
 
 
-def test_case_2(sol: wildcard_matching_adarsh.Solution) -> None:
+def test_case_2(sol: wildcard_matching.Solution) -> None:
     """
     Test case. Create an input string with distinct characters and a pattern string with only a star. Note that this is LeetCode example test case 2.
 
@@ -29,7 +29,7 @@ def test_case_2(sol: wildcard_matching_adarsh.Solution) -> None:
     assert sol.is_match(s, p) == True
 
 
-def test_case_3(sol: wildcard_matching_adarsh.Solution) -> None:
+def test_case_3(sol: wildcard_matching.Solution) -> None:
     """
     Test case. Create an input string with distinct characters and the pattern string containing a question mark. Note that this is LeetCode example test case 3.
 
@@ -43,7 +43,7 @@ def test_case_3(sol: wildcard_matching_adarsh.Solution) -> None:
     assert sol.is_match(s, p) == False
 
 
-def test_case_4(sol: wildcard_matching_adarsh.Solution) -> None:
+def test_case_4(sol: wildcard_matching.Solution) -> None:
     """
     Test case. Create an input string with distinct characters and a pattern string with multiple stars.
 
@@ -57,7 +57,7 @@ def test_case_4(sol: wildcard_matching_adarsh.Solution) -> None:
     assert sol.is_match(s, p) == True
 
 
-def test_case_5(sol: wildcard_matching_adarsh.Solution) -> None:
+def test_case_5(sol: wildcard_matching.Solution) -> None:
     """
     Test case. Create an input string and pattern string with the same distinct characters.
 
@@ -71,7 +71,7 @@ def test_case_5(sol: wildcard_matching_adarsh.Solution) -> None:
     assert sol.is_match(s, p) == True
 
 
-def test_case_6(sol: wildcard_matching_adarsh.Solution) -> None:
+def test_case_6(sol: wildcard_matching.Solution) -> None:
     """
     Test case. Create an input string with distinct characters and a pattern string with all question marks.
 
@@ -85,7 +85,7 @@ def test_case_6(sol: wildcard_matching_adarsh.Solution) -> None:
     assert sol.is_match(s, p) == True
 
 
-def test_case_7(sol: wildcard_matching_adarsh.Solution) -> None:
+def test_case_7(sol: wildcard_matching.Solution) -> None:
     """
     Test case. Create an input string with distinct characters and a pattern string with distinct characters, question marks, and a star.
 
@@ -99,7 +99,7 @@ def test_case_7(sol: wildcard_matching_adarsh.Solution) -> None:
     assert sol.is_match(s, p) == True
 
 
-def test_case_8(sol: wildcard_matching_adarsh.Solution) -> None:
+def test_case_8(sol: wildcard_matching.Solution) -> None:
     """
     Test case. Create an input string with distinct characters and a pattern string with distinct characters, question marks, and stars.
 
@@ -113,7 +113,7 @@ def test_case_8(sol: wildcard_matching_adarsh.Solution) -> None:
     assert sol.is_match(s, p) == False
 
 
-def test_case_9(sol: wildcard_matching_adarsh.Solution) -> None:
+def test_case_9(sol: wildcard_matching.Solution) -> None:
     """
     Test case. Create an input string and pattern string with empty strings. This tests the low end of the range of constraints in the problem.
 
@@ -127,7 +127,7 @@ def test_case_9(sol: wildcard_matching_adarsh.Solution) -> None:
     assert sol.is_match(s, p) == True
 
 
-def test_case_10(sol: wildcard_matching_adarsh.Solution) -> None:
+def test_case_10(sol: wildcard_matching.Solution) -> None:
     """
     Test case. Create an input string with 2000 distinct characters and a pattern string with only one star. This tests the high end of the range of constraints in the problem.
 
@@ -147,7 +147,7 @@ def main() -> None:
 
     :return: None
     """
-    sol = wildcard_matching_adarsh.Solution()
+    sol = wildcard_matching.Solution()
     test_case_1(sol)
     test_case_2(sol)
     test_case_3(sol)

@@ -1,6 +1,6 @@
-from interview_problems import longest_valid_parentheses_shivatmica
+from shivatmica import P32_longest_valid_parentheses
 
-def test_case_1(sol = longest_valid_parentheses_shivatmica.Solution()) -> None:
+def test_case_1(sol = P32_longest_valid_parentheses.Problem32()) -> None:
     """
     Test case 1: Leetcode example test case #1
     Expected output: 2

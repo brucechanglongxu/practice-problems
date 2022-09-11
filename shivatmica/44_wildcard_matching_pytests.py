@@ -1,6 +1,6 @@
-from interview_problems import wildcard_matching
+from shivatmica import 44_wildcard_matching
 
-def test_case_1(sol = wildcard_matching_shivatmica.Solution()) -> None:
+def test_case_1(sol = 44_wildcard_matching.Problem44()) -> None:
     """
     Test case 1: both the sequence and the pattern are empty strings
     Expected output: True
@@ -18,7 +18,7 @@ def test_case_1(sol = wildcard_matching_shivatmica.Solution()) -> None:
     p = ""
     assert sol.isMatch(s, p) == True
     
-def test_case_2(sol = wildcard_matching_shivatmica.Solution()) -> None:
+def test_case_2(sol = 44_wildcard_matching.Problem44()) -> None:
     """
     Test case 2: a string of characters compared to the pattern with only stars
     Expected output: True
@@ -36,7 +36,7 @@ def test_case_2(sol = wildcard_matching_shivatmica.Solution()) -> None:
     p = "****"
     assert sol.isMatch(s, p) == True
     
-def test_case_3(sol = wildcard_matching_shivatmica.Solution()) -> None:
+def test_case_3(sol = 44_wildcard_matching.Problem44()) -> None:
     """
     Test case 3: a string of characters compared to a pattern with an equivalent number of question marks
     Expected output: True
@@ -54,7 +54,7 @@ def test_case_3(sol = wildcard_matching_shivatmica.Solution()) -> None:
     p = "????????"
     assert sol.isMatch(s, p) == True
 
-def test_case_4(sol = wildcard_matching_shivatmica.Solution()) -> None:
+def test_case_4(sol = 44_wildcard_matching.Problem44()) -> None:
     """
     Test case 4: a string of characters compared to a pattern with the same characters
     Expected output: True
@@ -72,7 +72,7 @@ def test_case_4(sol = wildcard_matching_shivatmica.Solution()) -> None:
     p = "testcase"
     assert sol.isMatch(s, p) == True
     
-def test_case_5(sol = wildcard_matching_shivatmica.Solution()) -> None:
+def test_case_5(sol = 44_wildcard_matching.Problem44()) -> None:
     """
     Test case 5: a string of characters compared to a pattern with some characters, stars, and question marks
     Expected output: True
@@ -90,7 +90,7 @@ def test_case_5(sol = wildcard_matching_shivatmica.Solution()) -> None:
     p = "*e?t?a??"
     assert sol.isMatch(s, p) == True 
     
-def test_case_6(sol = wildcard_matching_shivatmica.Solution()) -> None:
+def test_case_6(sol = 44_wildcard_matching.Problem44()) -> None:
     """
     Test case 6: a string with the maximum number of possible characters and a pattern of a string of stars
     Expected output: True
@@ -109,7 +109,7 @@ def test_case_6(sol = wildcard_matching_shivatmica.Solution()) -> None:
     assert sol.isMatch(s, p) == True
     
 
-def test_case_7(sol = wildcard_matching_shivatmica.Solution()) -> None:
+def test_case_7(sol = 44_wildcard_matching.Problem44()) -> None:
     """
     Test case 7: Leetcode example test case #1
     Expected output: False
@@ -127,7 +127,7 @@ def test_case_7(sol = wildcard_matching_shivatmica.Solution()) -> None:
     p = "a"
     assert sol.isMatch(s, p) == False
 
-def test_case_8(sol = wildcard_matching_shivatmica.Solution()) -> None:
+def test_case_8(sol = 44_wildcard_matching.Problem44()) -> None:
     """
     Test case 8: Leetcode example test case #2
     Expected output: True
@@ -145,7 +145,7 @@ def test_case_8(sol = wildcard_matching_shivatmica.Solution()) -> None:
     p = "*"
     assert sol.isMatch(s, p) == True
     
-def test_case_9(sol = wildcard_matching_shivatmica.Solution()) -> None:
+def test_case_9(sol = 44_wildcard_matching.Problem44()) -> None:
     """
     Test case 9: Leetcode example test case #3
     Expected output: False
@@ -163,7 +163,7 @@ def test_case_9(sol = wildcard_matching_shivatmica.Solution()) -> None:
     p = "?a"
     assert sol.isMatch(s, p) == False
     
-def test_case_10(sol = wildcard_matching_shivatmica.Solution()) -> None:
+def test_case_10(sol = 44_wildcard_matching.Problem44()) -> None:
     """
     Test case 10: Leetcode example test case #4
     Expected output: True
@@ -189,7 +189,7 @@ def main() -> None:
     -------
     None
     """
-    sol = wildcard_matching_shivatmica.Solution()
+    sol = 44_wildcard_matching.Problem44()
     test_case_1(sol)
     test_case_2(sol)
     test_case_3(sol)

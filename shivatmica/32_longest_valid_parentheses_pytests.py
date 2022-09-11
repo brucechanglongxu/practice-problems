@@ -1,6 +1,6 @@
-from shivatmica import P32_longest_valid_parentheses
+from shivatmica import 32_longest_valid_parentheses
 
-def test_case_1(sol = P32_longest_valid_parentheses.Problem32()) -> None:
+def test_case_1(sol = 32_longest_valid_parentheses.Problem32()) -> None:
     """
     Test case 1: Leetcode example test case #1
     Expected output: 2
@@ -17,7 +17,7 @@ def test_case_1(sol = P32_longest_valid_parentheses.Problem32()) -> None:
     s = "(()"
     assert sol.longestValidParentheses(s) == 2
 
-def test_case_2(sol = longest_valid_parentheses_shivatmica.Solution()) -> None:
+def test_case_2(sol = 32_longest_valid_parentheses.Problem32()) -> None:
     """
     Test case 2: Leetcode example test case #2
     Expected output: 4
@@ -34,7 +34,7 @@ def test_case_2(sol = longest_valid_parentheses_shivatmica.Solution()) -> None:
     s = ")()())"
     assert sol.longestValidParentheses(s) == 4
 
-def test_case_3(sol = longest_valid_parentheses_shivatmica.Solution()) -> None:
+def test_case_3(sol = 32_longest_valid_parentheses.Problem32()) -> None:
     """
     Test case 3: Leetcode example test case #3
     Expected output: 0
@@ -51,7 +51,7 @@ def test_case_3(sol = longest_valid_parentheses_shivatmica.Solution()) -> None:
     s = ""
     assert sol.longestValidParentheses(s) == 0
 
-def test_case_4(sol = longest_valid_parentheses_shivatmica.Solution()) -> None:
+def test_case_4(sol = 32_longest_valid_parentheses.Problem32()) -> None:
     """
     Test case 4: Leetcode example test case #4
     Expected output: 4
@@ -68,7 +68,7 @@ def test_case_4(sol = longest_valid_parentheses_shivatmica.Solution()) -> None:
     s = "((())"
     assert sol.longestValidParentheses(s) == 4
 
-def test_case_5(sol = longest_valid_parentheses_shivatmica.Solution()) -> None:
+def test_case_5(sol = 32_longest_valid_parentheses.Problem32()) -> None:
     """
     Test case 5: Leetcode example test case #5
     Expected output: 4
@@ -85,7 +85,7 @@ def test_case_5(sol = longest_valid_parentheses_shivatmica.Solution()) -> None:
     s = "())((())"
     assert sol.longestValidParentheses(s) == 4
     
-def test_case_6(sol = longest_valid_parentheses_shivatmica.Solution()) -> None:
+def test_case_6(sol = 32_longest_valid_parentheses.Problem32()) -> None:
     """
     Test case 6: a string with just left parentheses
     Expected output: 0
@@ -102,7 +102,7 @@ def test_case_6(sol = longest_valid_parentheses_shivatmica.Solution()) -> None:
     s = "((((("
     assert sol.longestValidParentheses(s) == 0    
 
-def test_case_7(sol = longest_valid_parentheses_shivatmica.Solution()) -> None:
+def test_case_7(sol = 32_longest_valid_parentheses.Problem32()) -> None:
     """
     Test case 7: a string with just right parentheses
     Expected output: 0
@@ -119,7 +119,7 @@ def test_case_7(sol = longest_valid_parentheses_shivatmica.Solution()) -> None:
     s = ")))))"
     assert sol.longestValidParentheses(s) == 0
     
-def test_case_8(sol = longest_valid_parentheses_shivatmica.Solution()) -> None:
+def test_case_8(sol = 32_longest_valid_parentheses.Problem32()) -> None:
     """
     Test case 8: a string containing the maximum number of parentheses as allowed
     Expected output: 30000
@@ -145,7 +145,7 @@ def main() -> None:
     -------
     None
     """
-    sol = longest_valid_parentheses_shivatmica.Solution()
+    sol = 32_longest_valid_parentheses.Problem32()
     test_case_1(sol)
     test_case_2(sol)
     test_case_3(sol)

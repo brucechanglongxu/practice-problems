@@ -1,4 +1,4 @@
-from interview_problems import wildcard_matching_shivatmica
+from interview_problems import wildcard_matching
 
 def test_case_1(sol = wildcard_matching_shivatmica.Solution()) -> None:
     """

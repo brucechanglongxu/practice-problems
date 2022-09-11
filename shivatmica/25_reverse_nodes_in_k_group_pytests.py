@@ -1,17 +1,17 @@
-from interview_problems import reverse_nodes_in_k_group_shivatmica
+from shivatmica import 25_reverse_nodes_in_k_group
 
 def l_to_ll(list):
     """
     Converts a list into a linked list
     """
-    a = reverse_nodes_in_k_group_shivatmica.ListNode()
+    a = 25_reverse_nodes_in_k_group.ListNode()
     linked_list = a
     for i in list:
-        linked_list.next = reverse_nodes_in_k_group_shivatmica.ListNode(i)
+        linked_list.next = 25_reverse_nodes_in_k_group.ListNode(i)
         linked_list = linked_list.next
     return a.next
   
-def ll_to_l(linked_list: reverse_nodes_in_k_group_shivatmica.ListNode()):
+def ll_to_l(linked_list: 25_reverse_nodes_in_k_group.ListNode()):
     """
     Converts a linked list into a list
     """
@@ -23,7 +23,7 @@ def ll_to_l(linked_list: reverse_nodes_in_k_group_shivatmica.ListNode()):
         a = a.next
     return list
 
-def test_case_1(sol = reverse_nodes_in_k_group_shivatmica.Solution()) -> None:
+def test_case_1(sol = 25_reverse_nodes_in_k_group.Problem25()) -> None:
     """
     Test case 1: Leetcode example test case #1
     Expected output: [2, 1, 4, 3, 5]
@@ -42,7 +42,7 @@ def test_case_1(sol = reverse_nodes_in_k_group_shivatmica.Solution()) -> None:
     head = l_to_ll(list)
     assert ll_to_l(sol.reverseKGroup(head, k)) == [2, 1, 4, 3, 5]
     
-def test_case_2(sol = reverse_nodes_in_k_group_shivatmica.Solution()) -> None:
+def test_case_2(sol = 25_reverse_nodes_in_k_group.Problem25()) -> None:
     """
     Test case 2: Leetcode example test case #2
     Expected output: [3, 2, 1, 4, 5]
@@ -61,7 +61,7 @@ def test_case_2(sol = reverse_nodes_in_k_group_shivatmica.Solution()) -> None:
     head = l_to_ll(list)
     assert ll_to_l(sol.reverseKGroup(head, k)) == [3, 2, 1, 4, 5]
     
-def test_case_3(sol = reverse_nodes_in_k_group_shivatmica.Solution()) -> None:
+def test_case_3(sol = 25_reverse_nodes_in_k_group.Problem25()) -> None:
     """
     Test case 3: linked list with 5000 nodes, the maximum number of nodes possible in the list
     Expected output: [5, 4, 3, 2, 1, 5, 4, 3, 2, 1] * 500
@@ -80,7 +80,7 @@ def test_case_3(sol = reverse_nodes_in_k_group_shivatmica.Solution()) -> None:
     head = l_to_ll(list)
     assert ll_to_l(sol.reverseKGroup(head, k)) == [5, 4, 3, 2, 1, 5, 4, 3, 2, 1] * 500
 
-def test_case_4(sol = reverse_nodes_in_k_group_shivatmica.Solution()) -> None:
+def test_case_4(sol = 25_reverse_nodes_in_k_group.Problem25()) -> None:
     """
     Test case 4: linked list with 1 node with the value 0 (minimum values in the ranges for k, n, and node.val)
     Expected output: [0]
@@ -99,7 +99,7 @@ def test_case_4(sol = reverse_nodes_in_k_group_shivatmica.Solution()) -> None:
     head = l_to_ll(list)
     assert ll_to_l(sol.reverseKGroup(head, k)) == [0]
 
-def test_case_5(sol = reverse_nodes_in_k_group_shivatmica.Solution()) -> None:
+def test_case_5(sol = 25_reverse_nodes_in_k_group.Problem25()) -> None:
     """
     Test case 5: linked list with 5000 nodes, the maximum number of nodes possible in the list and also includes the maximum value for node.val (1000)
     Expected output: [1000, 999, 998, 997, 996, 1000, 999, 998, 997, 996] * 500
@@ -118,7 +118,7 @@ def test_case_5(sol = reverse_nodes_in_k_group_shivatmica.Solution()) -> None:
     head = l_to_ll(list)
     assert ll_to_l(sol.reverseKGroup(head, k)) == [1000, 999, 998, 997, 996, 1000, 999, 998, 997, 996] * 500
 
-def test_case_5(sol = reverse_nodes_in_k_group_shivatmica.Solution()) -> None:
+def test_case_5(sol = 25_reverse_nodes_in_k_group.Problem25()) -> None:
     """
     Test case 6: linked list with 5000 nodes, the maximum number of nodes possible in the list and the maximum value for k (5000)
     Expected output: [14] * 5000
@@ -145,7 +145,7 @@ def main() -> None:
     -------
     None
     """
-    sol = reverse_nodes_in_k_group_shivatmica.Solution()
+    sol = 25_reverse_nodes_in_k_group.Problem25()
     test_case_1(sol)
     test_case_2(sol)
     test_case_3(sol)

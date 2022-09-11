@@ -134,7 +134,7 @@ def main() -> None:
     -------
     None
     """
-    sol = 04_median_of_two_sorted_arrays.Solution()
+    sol = 04_median_of_two_sorted_arrays.Problem4()
     test_case_1(sol)
     test_case_2(sol)
     test_case_3(sol)

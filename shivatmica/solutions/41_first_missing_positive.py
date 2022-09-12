@@ -3,7 +3,9 @@ class Problem41:
     Class for First Missing Positive (#41)
     https://leetcode.com/problems/first-missing-positive/
     """
-    def firstMissingPositive(self, nums: List[int]) -> int:
+    def first_missing_positive(self, 
+                               nums: List[int]
+                              ) -> int:
         """
         Returns the smallest positive number that isn't included in the inputted list
         Time complexity: O(n)

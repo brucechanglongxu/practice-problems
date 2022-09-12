@@ -15,7 +15,7 @@ def test_case_1(sol = 32_longest_valid_parentheses.Problem32()) -> None:
     None
     """
     s = "(()"
-    assert sol.longestValidParentheses(s) == 2
+    assert sol.longest_valid_parentheses(s) == 2
 
 def test_case_2(sol = 32_longest_valid_parentheses.Problem32()) -> None:
     """
@@ -32,7 +32,7 @@ def test_case_2(sol = 32_longest_valid_parentheses.Problem32()) -> None:
     None
     """
     s = ")()())"
-    assert sol.longestValidParentheses(s) == 4
+    assert sol.longest_valid_parentheses(s) == 4
 
 def test_case_3(sol = 32_longest_valid_parentheses.Problem32()) -> None:
     """
@@ -49,7 +49,7 @@ def test_case_3(sol = 32_longest_valid_parentheses.Problem32()) -> None:
     None
     """
     s = ""
-    assert sol.longestValidParentheses(s) == 0
+    assert sol.longest_valid_parentheses(s) == 0
 
 def test_case_4(sol = 32_longest_valid_parentheses.Problem32()) -> None:
     """
@@ -66,7 +66,7 @@ def test_case_4(sol = 32_longest_valid_parentheses.Problem32()) -> None:
     None
     """
     s = "((())"
-    assert sol.longestValidParentheses(s) == 4
+    assert sol.longest_valid_parentheses(s) == 4
 
 def test_case_5(sol = 32_longest_valid_parentheses.Problem32()) -> None:
     """
@@ -83,7 +83,7 @@ def test_case_5(sol = 32_longest_valid_parentheses.Problem32()) -> None:
     None
     """
     s = "())((())"
-    assert sol.longestValidParentheses(s) == 4
+    assert sol.longest_valid_parentheses(s) == 4
     
 def test_case_6(sol = 32_longest_valid_parentheses.Problem32()) -> None:
     """
@@ -100,7 +100,7 @@ def test_case_6(sol = 32_longest_valid_parentheses.Problem32()) -> None:
     None
     """
     s = "((((("
-    assert sol.longestValidParentheses(s) == 0    
+    assert sol.longest_valid_parentheses(s) == 0    
 
 def test_case_7(sol = 32_longest_valid_parentheses.Problem32()) -> None:
     """
@@ -117,7 +117,7 @@ def test_case_7(sol = 32_longest_valid_parentheses.Problem32()) -> None:
     None
     """
     s = ")))))"
-    assert sol.longestValidParentheses(s) == 0
+    assert sol.longest_valid_parentheses(s) == 0
     
 def test_case_8(sol = 32_longest_valid_parentheses.Problem32()) -> None:
     """
@@ -134,7 +134,7 @@ def test_case_8(sol = 32_longest_valid_parentheses.Problem32()) -> None:
     None
     """
     s = "(())" * 7500
-    assert sol.longestValidParentheses(s) == 3 * (10**4)
+    assert sol.longest_valid_parentheses(s) == 3 * (10**4)
     
     
 def main() -> None:

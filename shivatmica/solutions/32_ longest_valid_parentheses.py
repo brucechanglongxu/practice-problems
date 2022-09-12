@@ -3,7 +3,9 @@ class Problem32:
     Class for Longest Valid Parentheses (#32)
     https://leetcode.com/problems/longest-valid-parentheses/
     """
-    def longestValidParentheses(self, s: str) -> int:
+    def longest_valid_parentheses(self, 
+                                  s: str
+                                 ) -> int:
         """
         Returns the longest substring of valid well-formed parantheses
         Time Complexity: O(n)

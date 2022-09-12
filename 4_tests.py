@@ -1,0 +1,98 @@
+p4 = __import__("4")
+
+
+def test_case_1() -> None:
+    """
+    Test case. Create the first sorted integer array with elements that are less than and more than those in the second array. Note that this is LeetCode example test case 1.
+
+    Verify that the median of these two sorted arrays is 2.
+
+    :return: None
+    """
+    nums1 = [1, 3]
+    nums2 = [2]
+    assert p4.find_median_sorted_arrays(nums1, nums2) == 2
+
+
+def test_case_2() -> None:
+    """
+    Test case. Create the first sorted integer array with elements that are less than those in the second array. Note that this is LeetCode example test case 2.
+
+    Verify that the median of these two sorted arrays is 2.5.
+
+    :return: None
+    """
+    nums1 = [1, 2]
+    nums2 = [3, 4]
+    assert p4.find_median_sorted_arrays(nums1, nums2) == 2.5
+
+
+def test_case_3() -> None:
+    """
+    Test case. Create the first sorted integer array and make the second array an empty array.
+
+    Verify that the median of these two sorted arrays is 1.5.
+
+    :return: None
+    """
+    nums1 = [1, 2]
+    nums2 = []
+    assert p4.find_median_sorted_arrays(nums1, nums2) == 1.5
+
+
+def test_case_4() -> None:
+    """
+    Test case. Create the first array to be an empty array and the second array to be a sorted integer array.
+
+    Verify that the median of these two sorted arrays is 7.5.
+
+    :return: None
+    """
+    nums1 = []
+    nums2 = [3, 12]
+    assert p4.find_median_sorted_arrays(nums1, nums2) == 7.5
+
+
+def test_case_5() -> None:
+    """
+    Test case. Create the first array to be the low end of the range of values given in the LeetCode problem (-10**6) and the second array to be the high end of the range of values given in the LeetCode problem (10**6).
+
+    Verify that the median of these two sorted arrays is 0.
+
+    :return: None
+    """
+    nums1 = [-(10 ** 6)]
+    nums2 = [10 ** 6]
+    assert p4.find_median_sorted_arrays(nums1, nums2) == 0
+
+
+def test_case_6() -> None:
+    """
+    Test case. Create the first sorted array with 1000 elements (with values from 0 through 999) and the second sorted array with 1000 elements (with values from 2000 through 2999) to test the maximum number of elements allowed in each input array.
+
+    Verify that the median of these two sorted arrays is 1499.5.
+
+    :return: None
+    """
+    nums1 = [num for num in range(0, 1000)]
+    nums2 = [num for num in range(2000, 3000)]
+    assert p4.find_median_sorted_arrays(nums1, nums2) == 1499.5
+
+
+def main() -> None:
+    """
+    Runs the test cases.
+
+    :return: None
+    """
+    test_case_1()
+    test_case_2()
+    test_case_3()
+    test_case_4()
+    test_case_5()
+    test_case_6()
+
+
+if __name__ == "__main__":
+    main()
+    print("All tests pass")

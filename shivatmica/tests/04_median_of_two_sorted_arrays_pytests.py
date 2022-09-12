@@ -1,4 +1,4 @@
-from shivatmica import 04_median_of_two_sorted_arrays
+from solutions import 04_median_of_two_sorted_arrays
 
 def test_case_1(sol = 04_median_of_two_sorted_arrays.Problem4()) -> None:
     """

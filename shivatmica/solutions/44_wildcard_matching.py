@@ -3,7 +3,10 @@ class Problem44:
     Class for Wildcard Matching (#44)
     https://leetcode.com/problems/wildcard-matching/
     """
-    def isMatch(self, s: str, p: str) -> bool:
+    def is_match(self, 
+                 s: str, 
+                 p: str
+                ) -> bool:
         """
         Returns whether the sequence (s) matches the pattern (p)
         Time complexity:

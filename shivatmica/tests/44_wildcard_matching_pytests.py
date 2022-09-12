@@ -16,7 +16,7 @@ def test_case_1(sol = 44_wildcard_matching.Problem44()) -> None:
     """
     s = ""
     p = ""
-    assert sol.isMatch(s, p) == True
+    assert sol.is_match(s, p) == True
     
 def test_case_2(sol = 44_wildcard_matching.Problem44()) -> None:
     """
@@ -34,7 +34,7 @@ def test_case_2(sol = 44_wildcard_matching.Problem44()) -> None:
     """
     s = "testcase"
     p = "****"
-    assert sol.isMatch(s, p) == True
+    assert sol.is_match(s, p) == True
     
 def test_case_3(sol = 44_wildcard_matching.Problem44()) -> None:
     """
@@ -52,7 +52,7 @@ def test_case_3(sol = 44_wildcard_matching.Problem44()) -> None:
     """
     s = "testcase"
     p = "????????"
-    assert sol.isMatch(s, p) == True
+    assert sol.is_match(s, p) == True
 
 def test_case_4(sol = 44_wildcard_matching.Problem44()) -> None:
     """
@@ -70,7 +70,7 @@ def test_case_4(sol = 44_wildcard_matching.Problem44()) -> None:
     """
     s = "testcase"
     p = "testcase"
-    assert sol.isMatch(s, p) == True
+    assert sol.is_match(s, p) == True
     
 def test_case_5(sol = 44_wildcard_matching.Problem44()) -> None:
     """
@@ -88,7 +88,7 @@ def test_case_5(sol = 44_wildcard_matching.Problem44()) -> None:
     """
     s = "testcase"
     p = "*e?t?a??"
-    assert sol.isMatch(s, p) == True 
+    assert sol.is_match(s, p) == True 
     
 def test_case_6(sol = 44_wildcard_matching.Problem44()) -> None:
     """
@@ -106,7 +106,7 @@ def test_case_6(sol = 44_wildcard_matching.Problem44()) -> None:
     """
     s = "a" * 2000
     p = "***"
-    assert sol.isMatch(s, p) == True
+    assert sol.is_match(s, p) == True
     
 
 def test_case_7(sol = 44_wildcard_matching.Problem44()) -> None:
@@ -125,7 +125,7 @@ def test_case_7(sol = 44_wildcard_matching.Problem44()) -> None:
     """
     s = "aa"
     p = "a"
-    assert sol.isMatch(s, p) == False
+    assert sol.is_match(s, p) == False
 
 def test_case_8(sol = 44_wildcard_matching.Problem44()) -> None:
     """
@@ -143,7 +143,7 @@ def test_case_8(sol = 44_wildcard_matching.Problem44()) -> None:
     """
     s = "aa"
     p = "*"
-    assert sol.isMatch(s, p) == True
+    assert sol.is_match(s, p) == True
     
 def test_case_9(sol = 44_wildcard_matching.Problem44()) -> None:
     """
@@ -161,7 +161,7 @@ def test_case_9(sol = 44_wildcard_matching.Problem44()) -> None:
     """
     s = "cb"
     p = "?a"
-    assert sol.isMatch(s, p) == False
+    assert sol.is_match(s, p) == False
     
 def test_case_10(sol = 44_wildcard_matching.Problem44()) -> None:
     """
@@ -179,7 +179,7 @@ def test_case_10(sol = 44_wildcard_matching.Problem44()) -> None:
     """
     s = "adceb"
     p = "*a*b"
-    assert sol.isMatch(s, p) == True
+    assert sol.is_match(s, p) == True
 
 def main() -> None:
     """

@@ -7,7 +7,7 @@ class ListNode(object):
 class Problem25(object):
     """
     Class for Reverse Nodes in k-Group (#25)
-    # https://leetcode.com/problems/reverse-nodes-in-k-group/
+    https://leetcode.com/problems/reverse-nodes-in-k-group/
     """
     def reverseKGroup(self, head, k):
         """

@@ -1,4 +1,4 @@
-from shivatmica import 25_reverse_nodes_in_k_group
+from solutions import 25_reverse_nodes_in_k_group
 
 def l_to_ll(list):
     """

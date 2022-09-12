@@ -20,8 +20,7 @@ class Problem41:
         nums.append(0) 
         n = len(nums)
         
-        # we don't need to consider negative or zero values (only non-negative integers)
-        # we can change any irrelevant values that are greater than n to be 0 so they aren't checked 
+        # we can change any irrelevant values that are greater than n or negative to be 0 so they aren't checked 
         for i in range(n):
             if nums[i] < 0 or nums[i] >= n:
                 nums[i] = 0

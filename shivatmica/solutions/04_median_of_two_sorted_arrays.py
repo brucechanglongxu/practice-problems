@@ -1,25 +1,17 @@
 class Problem4:
     """
     Class for Median of Two Sorted Arrays (#4)
-    # https://leetcode.com/problems/median-of-two-sorted-arrays/
+    https://leetcode.com/problems/median-of-two-sorted-arrays/
     """
     def findMedianSortedArrays(self, nums1: List[int], nums2: List[int]) -> float:
         """
         Returns the median of two inputted sorted arrays
         Time complexity: O(m+n)
         Space complexity: O(m+n)
-            
-        Parameters
-        ----------
-        nums1 : List[int]
-            The first integer array
-        nums2 : List[int]
-            The second integer array
-            
-        Returns
-        -------
-        median : float
-            The median of the two sorted arrays
+           
+        :param nums1: the first integer array
+        :param nums2: the second integer array
+        :return median: the median of the two sorted arrays
         """
         
         # we set the variables m and n equal to the lengths of the arrays nums1 and nums2, respectively

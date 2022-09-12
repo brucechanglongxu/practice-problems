@@ -1,4 +1,4 @@
-from shivatmica import 32_longest_valid_parentheses
+from solutions import 32_longest_valid_parentheses
 
 def test_case_1(sol = 32_longest_valid_parentheses.Problem32()) -> None:
     """

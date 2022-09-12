@@ -1,7 +1,7 @@
 class Problem32:
     """
     Class for Longest Valid Parentheses (#32)
-    # https://leetcode.com/problems/longest-valid-parentheses/
+    https://leetcode.com/problems/longest-valid-parentheses/
     """
     def longestValidParentheses(self, s: str) -> int:
         """
@@ -9,15 +9,8 @@ class Problem32:
         Time Complexity: O(n)
         Space Complexity: O(1)
         
-        Parameters
-        ----------
-        s : str
-            string of parantheses
-            
-        Returns
-        -------
-        max_num : int
-            the length of the longest valid substring of parentheses
+        :param s: string of parantheses
+        :return: the length of the longest valid substring of parentheses
         """
         
         max_num = 0

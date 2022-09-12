@@ -1,7 +1,7 @@
 class Problem41:
     """
     Class for First Missing Positive (#41)
-    # https://leetcode.com/problems/first-missing-positive/
+    https://leetcode.com/problems/first-missing-positive/
     """
     def firstMissingPositive(self, nums: List[int]) -> int:
         """
@@ -9,15 +9,8 @@ class Problem41:
         Time complexity: O(n)
         Space complexity: O(1)
         
-        Parameters
-        ----------
-        nums : List[int]
-            The inputted list, an unsorted integer array
-            
-        Returns
-        -------
-        i : int
-            The index of the first missing positive number
+        :param nums: the inputted list, an unsorted integer array
+        :return: the index of the first missing positive number
         """
         
         # adding 0 to the end of the list in the case that all the numbers are consecutive and smallest positive numbers

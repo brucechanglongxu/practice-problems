@@ -1,4 +1,4 @@
-from shivatmica import 44_wildcard_matching
+from solutions import 44_wildcard_matching
 
 def test_case_1(sol = 44_wildcard_matching.Problem44()) -> None:
     """

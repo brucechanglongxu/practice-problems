@@ -27,7 +27,7 @@ class Problem25(object):
         # we create copies to prevent editing the original linked lists
         prev = a
         curr = head
-        
+         
         # we save all the nodes in head
         nodes = []
         while curr:

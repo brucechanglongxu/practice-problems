@@ -14,18 +14,10 @@ class Problem25(object):
         Returns a linked list after reversing the list k nodes at a time
         Time complexity: 
         Space complexity: 
-        
-        Parameters
-        ----------
-        head : List
-            the inputted linked list 
-        k : int
-            k represents the number of nodes to reverse at a time
-            
-        Return
-        ------
-        a : List
-            the modified version of the original linked list
+   
+        :param head: the inputted linked list 
+        :param k: the number of nodes to reverse at a time
+        :return: the modified version of the original linked list
         """
         
         # a is an empty linked list which we define as a copy of the head linked list

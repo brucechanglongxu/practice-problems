@@ -16,7 +16,7 @@ def test_case_1(sol = 04_median_of_two_sorted_arrays.Problem4()) -> None:
     """
     nums1 = [1, 3]
     nums2 = [2]
-    assert sol.findMedianSortedArrays(nums1, nums2) == 2.00000
+    assert sol.find_median_sorted_arrays(nums1, nums2) == 2.00000
 
 def test_case_2(sol = 04_median_of_two_sorted_arrays.Problem4()) -> None:
     """
@@ -34,7 +34,7 @@ def test_case_2(sol = 04_median_of_two_sorted_arrays.Problem4()) -> None:
     """
     nums1 = [1, 2]
     nums2 = [3, 4]
-    assert sol.findMedianSortedArrays(nums1, nums2) == 2.50000
+    assert sol.find_median_sorted_arrays(nums1, nums2) == 2.50000
     
 def test_case_3(sol = 04_median_of_two_sorted_arrays.Problem4()) -> None:
     """
@@ -52,7 +52,7 @@ def test_case_3(sol = 04_median_of_two_sorted_arrays.Problem4()) -> None:
     """
     nums1 = [-(10**6)]
     nums2 = [10**6]
-    assert sol.findMedianSortedArrays(nums1, nums2) == 0
+    assert sol.find_median_sorted_arrays(nums1, nums2) == 0
     
 def test_case_4(sol = 04_median_of_two_sorted_arrays.Problem4()) -> None:
     """
@@ -70,7 +70,7 @@ def test_case_4(sol = 04_median_of_two_sorted_arrays.Problem4()) -> None:
     """
     nums1 = list(range(1, 1001))
     nums2 = list(range(1001, 2001))
-    assert sol.findMedianSortedArrays(nums1, nums2) == 1000.5
+    assert sol.find_median_sorted_arrays(nums1, nums2) == 1000.5
     
 def test_case_5(sol = 04_median_of_two_sorted_arrays.Problem4()) -> None:
     """
@@ -88,7 +88,7 @@ def test_case_5(sol = 04_median_of_two_sorted_arrays.Problem4()) -> None:
     """
     nums1 = []
     nums2 = [2, 4, 6, 8, 10, 12]
-    assert sol.findMedianSortedArrays(nums1, nums2) == 7.00000
+    assert sol.find_median_sorted_arrays(nums1, nums2) == 7.00000
     
 def test_case_6(sol = 04_median_of_two_sorted_arrays.Problem4()) -> None:
     """
@@ -106,7 +106,7 @@ def test_case_6(sol = 04_median_of_two_sorted_arrays.Problem4()) -> None:
     """
     nums1 = [2, 4, 6, 8, 10, 12]
     nums2 = []
-    assert sol.findMedianSortedArrays(nums1, nums2) == 7.00000
+    assert sol.find_median_sorted_arrays(nums1, nums2) == 7.00000
     
 def test_case_7(sol = 04_median_of_two_sorted_arrays.Problem4()) -> None:
     """
@@ -124,7 +124,7 @@ def test_case_7(sol = 04_median_of_two_sorted_arrays.Problem4()) -> None:
     """
     nums1 = list(range(1, 2001, 2))
     nums2 = list(range(2, 2002, 2))
-    assert sol.findMedianSortedArrays(nums1, nums2) == 1000.5
+    assert sol.find_median_sorted_arrays(nums1, nums2) == 1000.5
     
 def main() -> None:
     """

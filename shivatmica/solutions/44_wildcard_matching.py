@@ -4,7 +4,7 @@ class Problem44:
     https://leetcode.com/problems/wildcard-matching/
     """
     def is_match(self, 
-                 s: str, 
+                 s: str,
                  p: str
                 ) -> bool:
         """

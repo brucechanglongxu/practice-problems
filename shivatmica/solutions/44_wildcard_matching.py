@@ -1,7 +1,7 @@
 class Problem44:
     """
     Class for Wildcard Matching (#44)
-    # https://leetcode.com/problems/wildcard-matching/
+    https://leetcode.com/problems/wildcard-matching/
     """
     def isMatch(self, s: str, p: str) -> bool:
         """
@@ -9,17 +9,9 @@ class Problem44:
         Time complexity:
         Space complexity:
         
-        Parameters
-        ----------
-        s : str
-            The inputted string
-        p : str
-            The inputted pattern with which we must check if it matches the string (s)
-            
-        Returns
-        -------
-        dp_table[-1][-1] : bool
-            The boolean value (True/False) part of the DP table, representing whether the wildcard pattern matches the string
+        :param s: the inputted string
+        :param p: the inputted pattern with which we must check if it matches the string (s)
+        :return: the boolean value (True/False) part of the DP table, representing whether the wildcard pattern matches the string
         """
         
         # we take the respective lengths of s and p and add 1

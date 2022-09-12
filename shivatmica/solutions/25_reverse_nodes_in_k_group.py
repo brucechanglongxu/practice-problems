@@ -4,12 +4,15 @@ class ListNode(object):
         self.val = val
         self.next = next
         
-class Problem25(object):
+class Solution:
     """
     Class for Reverse Nodes in k-Group (#25)
     https://leetcode.com/problems/reverse-nodes-in-k-group/
     """
-    def reverseKGroup(self, head, k):
+    def reverse_k_group(self, 
+                      head: Optional[ListNode], 
+                      k: int
+                     ) -> Optional[ListNode]:
         """
         Returns a linked list after reversing the list k nodes at a time
         Time complexity: 

@@ -11,7 +11,7 @@ class Problem4:
            
         :param nums1: the first integer array
         :param nums2: the second integer array
-        :return median: the median of the two sorted arrays
+        :return: the median of the two sorted arrays
         """
         
         # we set the variables m and n equal to the lengths of the arrays nums1 and nums2, respectively

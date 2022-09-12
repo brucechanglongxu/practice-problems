@@ -1,4 +1,4 @@
-from shivatmica import 41_first_missing_positive
+from solutions import 41_first_missing_positive
 
 
 def test_case_1(sol = 41_first_missing_positive.Problem41()) -> None:

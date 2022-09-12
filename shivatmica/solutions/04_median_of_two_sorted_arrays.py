@@ -3,7 +3,10 @@ class Problem4:
     Class for Median of Two Sorted Arrays (#4)
     https://leetcode.com/problems/median-of-two-sorted-arrays/
     """
-    def findMedianSortedArrays(self, nums1: List[int], nums2: List[int]) -> float:
+    def find_median_sorted_arrays(self, 
+                               nums1: List[int], 
+                               nums2: List[int]
+                              ) -> float:
         """
         Returns the median of two inputted sorted arrays
         Time complexity: O(m+n)

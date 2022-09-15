@@ -9,8 +9,8 @@ class Problem44:
                 ) -> bool:
         """
         Returns whether the sequence (s) matches the pattern (p)
-        Time complexity:
-        Space complexity:
+        Time complexity: O(a*b)
+        Space complexity: O(a*b)
         
         :param s: the inputted string
         :param p: the inputted pattern with which we must check if it matches the string (s)

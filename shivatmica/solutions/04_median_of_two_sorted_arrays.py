@@ -44,7 +44,7 @@ class Problem4:
                 merged[k] = nums2.pop(0)
                 k += 1
                 
-        # once we've iterated through an entire array, we must copy the remaining elements of the larger array in the same order into the array merged
+        # after iterating through the array, we copy the remaining elements of the larger array in the same order into the array 
         # case where m > n
         if len(nums1) > 0: 
             while len(nums1) > 0:

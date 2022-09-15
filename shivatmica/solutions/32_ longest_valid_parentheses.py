@@ -8,6 +8,12 @@ class Problem32:
                                  ) -> int:
         """
         Returns the longest substring of valid well-formed parantheses
+        We maintain two counters (for the number of left and right parentheses) and traverse the inputted string from both left
+        to right and right to left. For left to right, when the number of right parentheses is greater than the number of left
+        parentheses, we reset the counters since we can't have a valid substring in such a case. For right to left, it's when the
+        number of right parentheses is greater than the number of left ones. When the number of left and right parentheses are 
+        equal, we have a valid substring of parentheses and this maximum number is ouputted.
+        
         Time Complexity: O(n)
         Space Complexity: O(1)
         
@@ -30,7 +36,8 @@ class Problem32:
                 max_num = max(max_num, left_counter * 2)
             elif right_counter > left_counter:
                 # if the number of right parentheses is greater than the left, we reset the counters
-                # this means we have consecutive right parentheses without a left parenthesis in the middle, which would break the chain e.g. ())
+                # this means we have consecutive right parentheses without a left parenthesis in the middle, 
+                # this would break the chain e.g. ())
                 left_counter = 0
                 right_counter = 0
         
@@ -41,7 +48,7 @@ class Problem32:
         
         # from right to left
         for i in range(len(s) - 1, -1, -1):
-            # the for loop starts with the index len(s) - 1 and decreases it's value by 1 (or incrementing by -1) until i reaches -1
+            # for loop starts with the index len(s) - 1 and decreases its value by 1 (or incremented by -1) until i reaches -1
             if s[i] == '(':
                 left_counter += 1
             if s[i] == ')':

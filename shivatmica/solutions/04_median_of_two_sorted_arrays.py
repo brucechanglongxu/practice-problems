@@ -9,9 +9,15 @@ class Problem4:
                               ) -> float:
         """
         Returns the median of two inputted sorted arrays
+        We're creating a new array to added the sorted elements into. We compare the first elements (smallest elements) and append
+        the smaller of the two elements into the new array, and then removing the added element from its array. Once we've added 
+        min(m,n) elements to the array, we add the remaining elements from the larger array in the order they're present in since
+        the elements are already sorted. From the resulting array, we can find the middle element or average of the middle elements 
+        (depending on the parity of the length of the array), which is the median of the two sorted arrays.
+        
         Time complexity: O(m+n)
         Space complexity: O(m+n)
-           
+        
         :param nums1: the first integer array
         :param nums2: the second integer array
         :return: the median of the two sorted arrays

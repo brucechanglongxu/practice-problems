@@ -31,7 +31,7 @@ class Solution:
         
         # a is an empty linked list which we define as a copy of the head linked list
         a = ListNode()
-        a.next = head
+        a.next = head 
         
         # we create copies to prevent editing the original linked lists
         prev = a

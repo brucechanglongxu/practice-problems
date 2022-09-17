@@ -3,7 +3,7 @@ class Problem32:
     Class for Longest Valid Parentheses (#32)
     https://leetcode.com/problems/longest-valid-parentheses/
     """
-    def longest_valid_parentheses(self, 
+    def longest_valid_parentheses(self,  
                                   s: str
                                  ) -> int:
         """

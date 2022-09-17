@@ -8,6 +8,17 @@ class Problem41:
                               ) -> int:
         """
         Returns the smallest positive number that isn't included in the inputted list
+        For each of the elements of the array nums, we begin by removing any elements that are negative or greater than n (the
+        length of the array) since we don't need to consider these (the list only should ultimately include values from 1 to n).
+        We iterate through the array nums and for each element, if the value of the element is k, we add n to the number at 
+        index k. Once we've updated each of the values, we iterate through the updated array once again and consider the integer 
+        quotient (nums[i]/n), which represents the number of times we added n to the number at that particular index. For 
+        example, if we want to know how many times the number k was included in the original array, we consider the number x at 
+        the index k in the array and the integer quotient x/n tells us the number of times the element k was included in the list
+        nums. The first index i where the quotient is 0 means that the number i was never included in the list and we return i. 
+        If all the numbers from 1 to n are included in the array, we return n + 1 since that's the first positive number not 
+        included in the list nums.
+        
         Time complexity: O(n)
         Space complexity: O(1)
         

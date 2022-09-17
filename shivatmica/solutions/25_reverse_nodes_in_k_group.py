@@ -15,8 +15,10 @@ class Solution:
                      ) -> Optional[ListNode]:
         """
         Returns a linked list after reversing the list k nodes at a time
-        Time complexity: 
-        Space complexity: 
+        
+        
+        Time complexity: O(n) [where n is the length of head]
+        Space complexity: O(n) [where n is the length of head]
    
         :param head: the inputted linked list 
         :param k: the number of nodes to reverse at a time

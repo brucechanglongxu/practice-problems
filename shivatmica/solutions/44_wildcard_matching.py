@@ -9,6 +9,13 @@ class Problem44:
                 ) -> bool:
         """
         Returns whether the sequence (s) matches the pattern (p)
+        We create a 2-D array filled with boolean values and dimensions of 1 added to the length of s and the length of p, comparing 
+        different sliced sections of these strings (from the 0th index or the empty string). If s is an empty string and any 
+        patterns including at least 1 "*", the dp_table entries relating to the comparisons between s and p should be marked True.
+        For the rest of the scenarios of s and p, we consider 2 cases where the last character in the pattern p is either "*" or the 
+        other case of "?" or the letters are the same. We add boolean values to the dp_table recursively using the previous entries 
+        in the table. We finally return the visually bottom-right entry of the table or dp_table[-1][-1].
+        
         Time complexity: O(a*b)
         Space complexity: O(a*b)
         

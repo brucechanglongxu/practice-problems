@@ -15,7 +15,11 @@ class Solution:
                      ) -> Optional[ListNode]:
         """
         Returns a linked list after reversing the list k nodes at a time
-        
+        We begin by adding each of the nodes in that particular order into a list called nodes. As soon as the number of added
+        nodes is k, we add the nodes backwards, starting from the kth node until the 1st node into a linked list. We then 
+        consider the remaining (n - k) nodes in the original linked list and repeat the same process by adding k nodes repeatedly 
+        until we have less than k nodes left. The remaining nodes (less than k nodes) are added to the linked list in the same 
+        order, and we return this linked list.
         
         Time complexity: O(n) [where n is the length of head]
         Space complexity: O(n) [where n is the length of head]

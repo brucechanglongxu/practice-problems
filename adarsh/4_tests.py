@@ -3,7 +3,8 @@ p4 = __import__("4")
 
 def test_case_1() -> None:
     """
-    Test case. Create the first sorted integer array with elements that are less than and more than those in the second array. Note that this is LeetCode example test case 1.
+    Test case. Create the first sorted integer array with elements that are less than and more than those in the second
+    array. Note that this is LeetCode example test case 1.
 
     Verify that the median of these two sorted arrays is 2.
 
@@ -16,7 +17,8 @@ def test_case_1() -> None:
 
 def test_case_2() -> None:
     """
-    Test case. Create the first sorted integer array with elements that are less than those in the second array. Note that this is LeetCode example test case 2.
+    Test case. Create the first sorted integer array with elements that are less than those in the second array. Note
+    that this is LeetCode example test case 2.
 
     Verify that the median of these two sorted arrays is 2.5.
 
@@ -55,7 +57,8 @@ def test_case_4() -> None:
 
 def test_case_5() -> None:
     """
-    Test case. Create the first array to be the low end of the range of values given in the LeetCode problem (-10**6) and the second array to be the high end of the range of values given in the LeetCode problem (10**6).
+    Test case. Create the first array to be the low end of the range of values given in the LeetCode problem (-10**6)
+    and the second array to be the high end of the range of values given in the LeetCode problem (10**6).
 
     Verify that the median of these two sorted arrays is 0.
 
@@ -68,7 +71,9 @@ def test_case_5() -> None:
 
 def test_case_6() -> None:
     """
-    Test case. Create the first sorted array with 1000 elements (with values from 0 through 999) and the second sorted array with 1000 elements (with values from 2000 through 2999) to test the maximum number of elements allowed in each input array.
+    Test case. Create the first sorted array with 1000 elements (with values from 0 through 999) and the second sorted
+    array with 1000 elements (with values from 2000 through 2999) to test the maximum number of elements allowed in each
+    input array.
 
     Verify that the median of these two sorted arrays is 1499.5.
 

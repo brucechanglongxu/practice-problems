@@ -1,24 +1,13 @@
 # https://leetcode.com/problems/median-of-two-sorted-arrays/
-def find_median_sorted_arrays(nums1: list[int], nums2: list[int]) -> float:
-    """
-    Finds and returns the median of two sorted arrays.
-
-    :param nums1: First sorted array
-    :param nums2: Second sorted array
-    :return: median of the two sorted arrays
-    """
-    total_length = len(nums1) + len(nums2)
-    if total_length % 2 == 0:
-        # return the average of the two middle numbers
-        return (find_recur(nums1, 0, len(nums1) - 1, nums2, 0, len(nums2) - 1, total_length // 2 - 1) + find_recur(
-            nums1, 0, len(nums1) - 1, nums2, 0, len(nums2) - 1, total_length // 2)) / 2
-    else:
-        # return the middle number
-        return find_recur(nums1, 0, len(nums1) - 1, nums2, 0, len(nums2) - 1, total_length // 2)
-
-
-def find_recur(nums1: list[int], nums1_start: int, nums1_end: int, nums2: list[int], nums2_start: int, nums2_end: int,
-               k: int) -> int:
+def find_recur(
+        nums1: list[int],
+        nums1_start: int,
+        nums1_end: int,
+        nums2: list[int],
+        nums2_start: int,
+        nums2_end: int,
+        k: int,
+) -> int:
     """
     Recursively finds and returns the kth smallest element of the combined arrays
 
@@ -54,3 +43,31 @@ def find_recur(nums1: list[int], nums1_start: int, nums1_end: int, nums2: list[i
             return find_recur(nums1, nums1_idx + 1, nums1_end, nums2, nums2_start, nums2_end, k - nums1_length - 1)
         else:
             return find_recur(nums1, nums1_start, nums1_end, nums2, nums2_idx + 1, nums2_end, k - nums2_length - 1)
+
+
+def find_median_sorted_arrays(
+        nums1: list[int],
+        nums2: list[int],
+) -> float:
+    """
+    Finds and returns the median of two sorted arrays.
+    Algorithm: This problem can be reduced to finding the kth smallest element in the two merged arrays. To do this,
+    this code starts at the middle element in each array. Then, it recursively eliminates half of one of the arrays
+    based on the relationship between the combined length of the arrays and k, updating k as needed. Eventually, one of
+    the arrays will be empty, and the kth element of the other array is returned from the recursive function and is
+    dealt with based on whether the total number of elements in the two input arrays was odd or even.
+    Time Complexity: O(log(n+m)), where n is length of nums1 and m is the length of nums2.
+    Space Complexity: O(log(n+m)), where n is length of nums1 and m is the length of nums2.
+
+    :param nums1: First sorted array
+    :param nums2: Second sorted array
+    :return: median of the two sorted arrays
+    """
+    total_length = len(nums1) + len(nums2)
+    if total_length % 2 == 0:
+        # return the average of the two middle numbers
+        return (find_recur(nums1, 0, len(nums1) - 1, nums2, 0, len(nums2) - 1, total_length // 2 - 1) + find_recur(
+            nums1, 0, len(nums1) - 1, nums2, 0, len(nums2) - 1, total_length // 2)) / 2
+    else:
+        # return the middle number
+        return find_recur(nums1, 0, len(nums1) - 1, nums2, 0, len(nums2) - 1, total_length // 2)

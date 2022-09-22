@@ -3,7 +3,8 @@ p44 = __import__("44")
 
 def test_case_1() -> None:
     """
-    Test case. Create an input string and pattern string with distinct characters that don't have the same length. Note that this is LeetCode example test case 1.
+    Test case. Create an input string and pattern string with distinct characters that don't have the same length. Note
+    that this is LeetCode example test case 1.
 
     Verify that the pattern does not match the string.
 
@@ -16,7 +17,8 @@ def test_case_1() -> None:
 
 def test_case_2() -> None:
     """
-    Test case. Create an input string with distinct characters and a pattern string with only a star. Note that this is LeetCode example test case 2.
+    Test case. Create an input string with distinct characters and a pattern string with only a star. Note that this is
+    LeetCode example test case 2.
 
     Verify that the pattern matches the string.
 
@@ -29,7 +31,8 @@ def test_case_2() -> None:
 
 def test_case_3() -> None:
     """
-    Test case. Create an input string with distinct characters and the pattern string containing a question mark. Note that this is LeetCode example test case 3.
+    Test case. Create an input string with distinct characters and the pattern string containing a question mark. Note
+    that this is LeetCode example test case 3.
 
     Verify that the pattern does not match the string.
 
@@ -81,7 +84,8 @@ def test_case_6() -> None:
 
 def test_case_7() -> None:
     """
-    Test case. Create an input string with distinct characters and a pattern string with distinct characters, question marks, and a star.
+    Test case. Create an input string with distinct characters and a pattern string with distinct characters, question
+    marks, and a star.
 
     Verify that the pattern matches the string.
 
@@ -94,7 +98,8 @@ def test_case_7() -> None:
 
 def test_case_8() -> None:
     """
-    Test case. Create an input string with distinct characters and a pattern string with distinct characters, question marks, and stars.
+    Test case. Create an input string with distinct characters and a pattern string with distinct characters, question
+    marks, and stars.
 
     Verify that the pattern does not match the string.
 
@@ -107,7 +112,8 @@ def test_case_8() -> None:
 
 def test_case_9() -> None:
     """
-    Test case. Create an input string and pattern string with empty strings. This tests the low end of the range of constraints in the problem.
+    Test case. Create an input string and pattern string with empty strings. This tests the low end of the range of
+    constraints in the problem.
 
     Verify that the pattern matches the string.
 
@@ -120,7 +126,8 @@ def test_case_9() -> None:
 
 def test_case_10() -> None:
     """
-    Test case. Create an input string with 2000 distinct characters and a pattern string with only one star. This tests the high end of the range of constraints in the problem.
+    Test case. Create an input string with 2000 distinct characters and a pattern string with only one star. This tests
+    the high end of the range of constraints in the problem.
 
     Verify that the pattern matches the string.
 

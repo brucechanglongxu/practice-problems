@@ -3,7 +3,8 @@ p32 = __import__("32")
 
 def test_case_1() -> None:
     """
-    Test case. Create an input string with two consecutive matching parentheses. Note that this is LeetCode example test case 1.
+    Test case. Create an input string with two consecutive matching parentheses. Note that this is LeetCode example test
+    case 1.
 
     Verify that the longest number of valid parentheses is 2.
 
@@ -15,7 +16,8 @@ def test_case_1() -> None:
 
 def test_case_2() -> None:
     """
-    Test case. Create an input string four consecutive matching parentheses. Note that this is LeetCode example test case 2.
+    Test case. Create an input string four consecutive matching parentheses. Note that this is LeetCode example test
+    case 2.
 
     Verify that the longest number of valid parentheses is 4.
 
@@ -63,7 +65,8 @@ def test_case_5() -> None:
 
 def test_case_6() -> None:
     """
-    Test case. Create an input string with the maximum number of parentheses (3 * 10**4). This means 15000 pairs of open and close parentheses.
+    Test case. Create an input string with the maximum number of parentheses (3 * 10**4). This means 15000 pairs of open
+    and close parentheses.
 
     Verify that the longest number of valid parentheses is 30000.
 

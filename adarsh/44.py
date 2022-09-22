@@ -1,7 +1,17 @@
 # https://leetcode.com/problems/wildcard-matching/
-def is_match(s: str = "aa", p: str = "a") -> bool:
+def is_match(
+        s: str = "aa",
+        p: str = "a",
+) -> bool:
     """
-    Finds and returns whether the pattern p matches the entire input string s
+    Finds and returns whether the pattern p matches the entire input string s.
+    Algorithm: This code uses a dynamic programming approach. It uses an array, dp, with each element being True or
+    False, representing whether the first idx elements of s can be matched. It works backwards through dp to update each
+    element. If the strings match, then the last element is True, otherwise False. There are three cases for
+    corresponding characters in s and p: they are the same character, the character in p is a ?, or the character in p
+    is a *. This program goes through each of those possible cases and updates dp accordingly.
+    Time Complexity: O(mn), where m is the length of p and n is the length of s.
+    Space Complexity: O(n), where n is the length of s.
 
     :param s: Input string consisting of only lowercase English letters
     :param p: Pattern consisting of only lowercase English letters, '?', or '*'

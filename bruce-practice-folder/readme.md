@@ -4,9 +4,12 @@ The most efficient solution is a direct sorting algorithm, followed by a two-poi
 Two Sum: 
 A dynamic programming solution allows to reduce the solution time complexity from O(N^2) to O(N)
 
-Reverse Linked List:
+Reverse Linked List: 
+The iterative solution utilizes multiple O(1) rewriting moves, and since we pass through the entire array, we require O(n) time and constant space overhead. 
 
 <img width="651" alt="image" src="https://user-images.githubusercontent.com/49863684/191865895-77934d0a-9876-4563-b570-a4cf173e84d1.png">
+
+The recursive solution is easier to reason about, but requires more computational/space overhead (O(n)) compared to the iterative solution, there are various sections of the linked list that we can actually call our recursive function on. 
 
 Some key takeaways:
 

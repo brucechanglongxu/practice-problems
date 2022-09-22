@@ -4,6 +4,10 @@ The most efficient solution is a direct sorting algorithm, followed by a two-poi
 Two Sum: 
 A dynamic programming solution allows to reduce the solution time complexity from O(N^2) to O(N)
 
+Reverse Linked List:
+
+<img width="651" alt="image" src="https://user-images.githubusercontent.com/49863684/191865895-77934d0a-9876-4563-b570-a4cf173e84d1.png">
+
 Some key takeaways:
 
 1. Python dictionaries: We observe that python dictionaries are implemented as hash table, and allow for hash collisions i.e. even if two distinct keys have the same hash value, the table must still have a strategy to insert and retrive the key and value pairs unambiguosly (the solution is to use "open addressing")

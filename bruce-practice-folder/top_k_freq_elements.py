@@ -1,11 +1,3 @@
-
-# Python3 implementation to find k numbers
-# with most occurrences in the given array
- 
-# Function to print the k numbers with
-# most occurrences
- 
- 
 def pr_N_mostFrequentNumber(arr, N, K):
  
     mp = {}

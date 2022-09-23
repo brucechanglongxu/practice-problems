@@ -40,3 +40,5 @@ To keep track of ordering (i.e. how recently we have accessed a particular data 
 **Lowest Common Ancestor in BST:** We take a recursive approach. The key idea is that the lowest common ancestor A of nodes X and Y is the unique node satisfying the property that (WLOG) node X lies in it's left subtree child and node Y lies in it's right subtree child. 
 
 **Serialize and Deserialize a Binary Tree:** This ADT should accomodate for two main functions ".serialize()" and ".deserialize()". We should apply the "single action, then defer" heuristic. Again, we should take a recursive approach on the left sub-tree and the right sub-trees, using the typical recursive structure for BST-type problems. 
+
+**Find the k-th largest element in array:** A min-heap or a max-heap will readily allow us to find the k-th largest element in a particular set of leements, this should be the go-to approach. By maintaining a min-heap of size 2, once we burn through all of the elements in our array, since every time we evict the smallest element (root-node) of our min-heap, by the end of all of our iterations, we are left with only the two largest elements. 

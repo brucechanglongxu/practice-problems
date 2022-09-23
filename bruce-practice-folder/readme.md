@@ -11,6 +11,10 @@ The recursive solution is easier to reason about, but requires more computationa
 
 We can apply our solution to "reversing a linked-list" in groups of k, whilst addressing the wiring in between each of the k-groups. As always, there is a recursive analog to our iterative solution, where we can begin by reversing the first k-nodes in our linked-list, then recursively calling our reverse function on the remainign nodes within our linked list. 
 
+**First Missing Positive Integer:** Given an unsorted array of integers, return the smallest missing positive integer. 
+
+<img width="710" alt="image" src="https://user-images.githubusercontent.com/49863684/191893369-b15ed114-9ee7-4f0d-8316-3a54e16fe0e1.png">
+
 Some key takeaways:
 
 1. Python dictionaries: We observe that python dictionaries are implemented as hash table, and allow for hash collisions i.e. even if two distinct keys have the same hash value, the table must still have a strategy to insert and retrieve the key and value pairs unambiguosly (the solution is to use "open addressing")

@@ -18,7 +18,6 @@ def findFreeinterval(arr, N):
         # store that answer
         if prevEnd < currStart:
             P.append([prevEnd, currStart])
-     
     # Print the intervals
     for i in P:
         print(i)

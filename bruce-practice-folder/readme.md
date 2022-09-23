@@ -14,6 +14,11 @@ The recursive solution is easier to reason about, but requires more computationa
 **Same Tree:**
 Our solution is recursive in nature. 
 
+**Reverse Node in k-group:**
+<img width="740" alt="image" src="https://user-images.githubusercontent.com/49863684/191887137-b14a364e-09f5-4f98-b9dc-c2484536a064.png">
+
+We can apply our solution to "reversing a linked-list" in groups of k, whilst addressing the wiring in between each of the k-groups. 
+
 Some key takeaways:
 
 1. Python dictionaries: We observe that python dictionaries are implemented as hash table, and allow for hash collisions i.e. even if two distinct keys have the same hash value, the table must still have a strategy to insert and retrive the key and value pairs unambiguosly (the solution is to use "open addressing")

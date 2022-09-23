@@ -19,7 +19,7 @@ We can apply our solution to "reversing a linked-list" in groups of k, whilst ad
 
 **Longest Valid Parenthesis:** Given a string containing just the characters '(' and ')', find the length of the longest valid (well-formed) parantheses substring. 
 
-**Wildcard Matching:** 
+**Wildcard Matching:** We will take a dynamic-programming approach. 
 
 Some key takeaways:
 

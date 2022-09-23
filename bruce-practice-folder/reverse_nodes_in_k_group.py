@@ -33,7 +33,6 @@ class Solution:
             prev = current
             current = next
             count += 1
-  
         # next is now a pointer to (k+1)th node
         # recursively call for the list starting
         # from current. And make rest of the list as
@@ -57,13 +56,11 @@ class SolutionNonRecursive:
     def reverseKGroup(self, head: ListNode, k: int) -> ListNode:
         dummy = ListNode(0, head)
         groupPrev = dummy
-        
         while True:
             self.getKth()
             if not kth:
                 break
             groupNext = kth.next 
-            
             # reverse a group (with two-pointer method)
             prev, curr = kth.next, groupPrev.next
             while curr != groupNext:
@@ -71,12 +68,11 @@ class SolutionNonRecursive:
                 curr.next = prev
                 prev = curr
                 curr = tmp
-                
             tmp = groupPrev.next     
             groupPrev.next = kth
             groupPrev = tmp
         return dummy.next
-            
+        
         def getKth(self, curr, k):
             while curr and k > 0:
                 curr = curr.next

@@ -1,5 +1,8 @@
-class Solution:
+class Solution1:
     def longestValidParentheses(self, s: str) -> int:
+    """
+    Linear time and linear space solution to find the longest valid parentheses
+    """
         stack = [-1]
         for i, p in enumerate(s):
             if p == "(":
@@ -12,4 +15,31 @@ class Solution:
                     mx = max(mx, i - stack[-1])
         return mx
 
-    
+class Solution2:
+    def longestValidParentheses(self, s: str) -> int:
+    """
+    Linear time and constant space solution for longest valid parentheses
+    """
+        def longestValid Parentheses(self, s: str) -> int:
+            l, r = 0, 0
+            mx = 0
+            for p in s:
+                if p == "(":
+                    l+=1
+                else:
+                    r+= 1
+                if l== r:
+                    mx = max(mx, r*2)
+                elif r>1:
+                    l, r =0, 0
+            l,r =0,0
+            for p in reverse(s): 
+                if p == ")":
+                    r+=1
+                else:
+                    l+=1
+                if l==r:
+                    mx = max(mx,r*2)
+                elif l>r:
+                    l,r =0,0
+            return mx

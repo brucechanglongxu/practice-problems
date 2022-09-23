@@ -17,9 +17,9 @@ We can apply our solution to "reversing a linked-list" in groups of k, whilst ad
 
 **Median of Two Sorted Arrays:** Given two worted arrays, output the median of both of the sorted arrays. 
 
-**Longest Valid Parenthesis:**
+**Longest Valid Parenthesis:** Given a string containing just the characters '(' and ')', find the length of the longest valid (well-formed) parantheses substring. 
 
-**Wildcard Matching:**
+**Wildcard Matching:** 
 
 Some key takeaways:
 

@@ -28,5 +28,6 @@ Some key takeaways:
 
 3. Each entry in the table is a combination of <hash, key, value>
 
+4. Python "self". Since python is an object-oriented programming language, every time we define methods for a class, we will use self as the very first parameter. The "self" parameter allows access to unique attributes and methods for each individual declaration of our object. 
 
 

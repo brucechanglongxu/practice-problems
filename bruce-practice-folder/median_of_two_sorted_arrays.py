@@ -9,8 +9,8 @@ class Solution:
     while True:
        i = (l + r) // 2
        j = half - i - 2
-       Aleft = A[i]
+       Aleft = A[i] if i >= 0 else float("-infinity")
        Aright = A[i + 1]
-       Bleft = B[j]
+       Bleft = B[j] if j >= 0 else float("-infinity")
        Bright = B[j + 1]
  

@@ -71,25 +71,4 @@ def mergeLists(headA, headB):
     # Returns the head of the merged list
     return dummyNode.next
   
-  
-# Create 2 lists
-listA = LinkedList()
-listB = LinkedList()
-  
-# Add elements to the list in sorted order
-listA.addToList(5)
-listA.addToList(10)
-listA.addToList(15)
-  
-listB.addToList(2)
-listB.addToList(3)
-listB.addToList(20)
-  
-# Call the merge function
-listA.head = mergeLists(listA.head, listB.head)
-  
-# Display merged list
-print("Merged Linked List is:")
-listA.printList()
-
       

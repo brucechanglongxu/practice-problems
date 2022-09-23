@@ -34,3 +34,5 @@ Some key takeaways:
 <img width="703" alt="image" src="https://user-images.githubusercontent.com/49863684/191903518-415b074e-b224-4547-9f64-58f5183d3fb6.png">
 
 To keep track of ordering (i.e. how recently we have accessed a particular data element), we should utilize a structure such as a linked list, which allows us to dynamically change the ordering of our values as we go along. However, if we want to access elements efficiently as well, we should also use a data structure such as a hash-table, which will provide us with constant time access. Ultimately, we can combine the two data structures to provide us with both constant-time access and the ability to keep track of how recently we have accessed a particular element within our cache (image above). 
+
+**Serialize and Deserialize a Binary Tree:** This ADT should accomodate for two main functions ".serialize()" and ".deserialize()". 

@@ -1,9 +1,9 @@
 **Reverse Linked List:** 
-The iterative solution utilizes multiple O(1) rewriting moves, and since we pass through the entire array, we require O(n) time and constant space overhead. 
+The iterative solution utilizes multiple O(1) rewriting moves, and since we pass through the entire array, we require O(n) time and constant space overhead (since we only need to maintain three pointers, curr, prev and next at all times throughout our entire algorithm). 
 
 <img width="728" alt="image" src="https://user-images.githubusercontent.com/49863684/191891691-dc2c2c18-b4c3-494b-a51f-f430e2c4c410.png">
 
-The recursive solution is easier to reason about, but requires more computational/space overhead (O(n)) compared to the iterative solution, we can re-wire the first node of our linked list, and subsequently recursively call our Reverse() function on the remainder of the linked list. 
+The recursive solution is easier to reason about, but requires more computational/space overhead O(n) compared to the iterative solution (since we need to create n stack frames throughout our recursion), we can re-wire the first node of our linked list, and subsequently recursively call our Reverse() function on the remainder of the linked list. 
 
 **Reverse Node in k-group:** Given a linked list, reverse the elements in the linked list in groups of k at a time. 
 

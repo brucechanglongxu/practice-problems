@@ -14,7 +14,8 @@ The recursive solution is easier to reason about, but requires more computationa
 **Same Tree:**
 Our solution is recursive in nature. 
 
-**Reverse Node in k-group:**
+**Reverse Node in k-group:** Given a linked list, reverse the elements in the linked list in groups of k at a time. 
+
 <img width="740" alt="image" src="https://user-images.githubusercontent.com/49863684/191887137-b14a364e-09f5-4f98-b9dc-c2484536a064.png">
 
 We can apply our solution to "reversing a linked-list" in groups of k, whilst addressing the wiring in between each of the k-groups. As always, there is a recursive analog to our iterative solution, where we can begin by reversing the first k-nodes in our linked-list, then recursively calling our reverse function on the remainign nodes within our linked list. 

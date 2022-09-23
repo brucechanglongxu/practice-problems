@@ -37,4 +37,4 @@ To keep track of ordering (i.e. how recently we have accessed a particular data 
 
 **Lowest Common Ancestor in BST:** 
 
-**Serialize and Deserialize a Binary Tree:** This ADT should accomodate for two main functions ".serialize()" and ".deserialize()". 
+**Serialize and Deserialize a Binary Tree:** This ADT should accomodate for two main functions ".serialize()" and ".deserialize()". We should apply the "single action, then defer" heuristic. 

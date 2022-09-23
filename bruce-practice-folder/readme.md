@@ -27,11 +27,11 @@ Some key takeaways:
 
 2. The python hash table is a contiguous block of memory, so we have an O(1) lookup time. Each slot in the table can store one and only one entry. Each entry in the table is a combination of <hash, key, value>. We take advantage of hash-tables to circumvent large time complexities that arise from iteration through unsorted/chaotic data. 
 
-4. Python "self". Since python is an object-oriented programming language, every time we define methods for a class, we will use self as the very first parameter. The "self" parameter allows access to unique attributes and methods for each individual declaration of our object. 
+3. Python "self". Since python is an object-oriented programming language, every time we define methods for a class, we will use self as the very first parameter. The "self" parameter allows access to unique attributes and methods for each individual declaration of our object. 
+
+4. Whenever we are provided with an O(log n) complexity bound, binary search is most likely involved in some capacity. 
 
 **LRU Cache:** We would like to implement a caching mechanism that echibits the LRU eviction policy i.e. we will store a certain amount of data and evict the least recently used element when we call get() (there are two functions that our API must address, namely get() and put()). 
-
-5. Whenever we are provided with an O(log n) complexity bound, binary search is most likely involved in some capacity. 
 
 <img width="703" alt="image" src="https://user-images.githubusercontent.com/49863684/191903518-415b074e-b224-4547-9f64-58f5183d3fb6.png">
 

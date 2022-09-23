@@ -41,7 +41,6 @@ def mergeInterval2(arr, n, newPair) :
             top[1] = max(top[1], arr[i][1])
             # Push the current interval
             stk.append(top)
-         
         else :
             # Push the new pair as it does
             # not intersect to first pair

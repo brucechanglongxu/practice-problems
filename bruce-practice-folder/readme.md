@@ -3,7 +3,7 @@ The iterative solution utilizes multiple O(1) rewriting moves, and since we pass
 
 <img width="651" alt="image" src="https://user-images.githubusercontent.com/49863684/191865895-77934d0a-9876-4563-b570-a4cf173e84d1.png">
 
-The recursive solution is easier to reason about, but requires more computational/space overhead (O(n)) compared to the iterative solution, there are various sections of the linked list that we can actually call our recursive function on. 
+The recursive solution is easier to reason about, but requires more computational/space overhead (O(n)) compared to the iterative solution, we can re-wire the first node of our linked list, and subsequently recursively call our Reverse() function on the remainder of the linked list. 
 
 **Reverse Node in k-group:** Given a linked list, reverse the elements in the linked list in groups of k at a time. 
 

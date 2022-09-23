@@ -15,6 +15,12 @@ We can apply our solution to "reversing a linked-list" in groups of k, whilst ad
 
 <img width="710" alt="image" src="https://user-images.githubusercontent.com/49863684/191893369-b15ed114-9ee7-4f0d-8316-3a54e16fe0e1.png">
 
+**Median of Two Sorted Arrays:** Given two worted arrays, output the median of both of the sorted arrays. 
+
+**Longest Valid Parenthesis:**
+
+**Wildcard Matching:**
+
 Some key takeaways:
 
 1. Python dictionaries: We observe that python dictionaries are implemented as hash table, and allow for hash collisions i.e. even if two distinct keys have the same hash value, the table must still have a strategy to insert and retrieve the key and value pairs unambiguosly (the solution is to use "open addressing")

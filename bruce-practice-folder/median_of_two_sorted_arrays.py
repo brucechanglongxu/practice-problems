@@ -1,17 +1,8 @@
-def Solution(arr):
+class Solution:
+ def findMedianSortedArrays(self, nums1: List[int], nums2: List[int]) -> float:
+ A, B = nums1, nums2
+ total = len(nums1) + len(nums2)
+ half = total // 2
+ if len(B) < len(A):
+  A, B = B, A
  
-    n = len(arr)
- 
-    # If length of array is even
-    if n % 2 == 0:
-        z = n // 2
-        e = arr[z]
-        q = arr[z - 1]
-        ans = (e + q) / 2
-        return ans
-         
-    # If length of array is odd
-    else:
-        z = n // 2
-        ans = arr[z]
-        return ans

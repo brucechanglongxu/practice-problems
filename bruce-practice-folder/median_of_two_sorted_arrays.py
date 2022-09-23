@@ -9,5 +9,8 @@ class Solution:
     while True:
        i = (l + r) // 2
        j = half - i - 2
- 
+       Aleft = A[i]
+       Aright = A[i + 1]
+       Bleft = B[j]
+       Bright = B[j + 1]
  

@@ -1,7 +1,7 @@
 class Solution1:
     def longestValidParentheses(self, s: str) -> int:
     """
-    Linear time and linear space solution to find the longest valid parentheses
+    Stack-based linear time and linear space solution to find the longest valid parentheses
     """
         stack = [-1]
         for i, p in enumerate(s):
@@ -18,7 +18,7 @@ class Solution1:
 class Solution2:
     def longestValidParentheses(self, s: str) -> int:
     """
-    Linear time and constant space solution for longest valid parentheses
+    Linear time and constant space solution for longest valid parentheses (increment left & right pointers)
     """
         def longestValid Parentheses(self, s: str) -> int:
             l, r = 0, 0

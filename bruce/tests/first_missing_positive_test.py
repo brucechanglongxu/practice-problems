@@ -1,4 +1,4 @@
-import first_missing_positive
+from bruce import first_missing_positive
 
 
 def test_case_1(sol: first_missing_positive.Solution) -> None:
@@ -208,4 +208,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-    print("All tests pass")
+    print("Our solutions passes")

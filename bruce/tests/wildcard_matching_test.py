@@ -141,4 +141,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-    print("All tests pass")
+    print("Our solution passes")

@@ -25,7 +25,7 @@ def display(root):
         print(root.data, end = " ")
         root = root.next
           
-def arrayToList(arr, n):
+def array_to_list(arr, n):
     root = None
     for i in range(0, n, 1):
         root = insert(root, arr[i])

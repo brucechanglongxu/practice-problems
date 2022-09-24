@@ -1,7 +1,10 @@
 import reverse_nodes_in_k_group
+import array_to_list
 
 def first_test_case(reversed_sol : reverse_nodes_in_k_group.Solution) -> None:
-    orig_list = []
+    orig_list = [1, 2, 3, 4, 5, 6, 7, 8]
+    k = 1
+    list_linked = array_to_list(orig_list)
     assert reversed_sol.reverse_nodes_in_k_group(list_linked) == 0
    
 def second_test_case(reversed_sol : reverse_nodes_in_k_group.Solution) -> None:

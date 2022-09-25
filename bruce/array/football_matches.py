@@ -8,7 +8,11 @@
 # The naive solution is to iterate over all of the elements in team A and B for a total of O(m * n)
 
 # Smarter solution that requires us to sort team A, and subsequently use a binary search
-def counts(teamA : List[int], teamB : List[int]):
+def counts(teamA : List[int], teamB : List[int]) -> List[int]:
+    """
+    Input: Number of goals achieved by teamA in various matches as an integer list.
+    The number of goals achieved by teamB in various matches as an integer list
+    """
     ans = []
     teamA.sort()
     for score in teamB:

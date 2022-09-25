@@ -3,7 +3,8 @@ p41 = __import__("41")
 
 def test_case_1() -> None:
     """
-    Test case. Create an unsorted integer array with 0 and the first two smallest positive integers. Note that this is LeetCode example test case 1.
+    Test case. Create an unsorted integer array with 0 and the first two smallest positive integers. Note that this is
+    LeetCode example test case 1.
 
     Verify that the smallest missing positive integer in that array is 3.
 
@@ -15,7 +16,8 @@ def test_case_1() -> None:
 
 def test_case_2() -> None:
     """
-    Test case. Create an unsorted integer array with -1 and the first four smallest positive integers except the number two. Note that this is LeetCode example test case 2.
+    Test case. Create an unsorted integer array with -1 and the first four smallest positive integers except the number
+    two. Note that this is LeetCode example test case 2.
 
     Verify that the smallest missing positive integer in that array is 2.
 
@@ -27,7 +29,8 @@ def test_case_2() -> None:
 
 def test_case_3() -> None:
     """
-    Test case. Create a sorted integer array with five positive integers that are out of range. Note that this is LeetCode example test case 3.
+    Test case. Create a sorted integer array with five positive integers that are out of range. Note that this is
+    LeetCode example test case 3.
 
     Verify that the smallest missing positive integer in that array is 1.
 
@@ -149,7 +152,8 @@ def test_case_13() -> None:
     """
     Test case. Create an sorted integer array with maximum allowed length (10**5).
 
-    Verify that the smallest missing positive integer in that array is higher than the maximum allowed length (10**5 + 1).
+    Verify that the smallest missing positive integer in that array is higher than the maximum allowed length
+    (10**5 + 1).
 
     :return: None
     """

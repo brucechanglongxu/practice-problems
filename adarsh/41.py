@@ -2,90 +2,36 @@
 def first_missing_positive(nums: list[int]) -> int:
     """
     Finds and returns the smallest missing positive integer in nums
+    Algorithm: If the space complexity were O(n), then another boolean list could be made to say whether a value exists.
+    We could iterate through this array to find the first False, i.e. the first missing positive. However, this can be
+    optimized by keeping only the original list but multiplying each number by -1 if it exists. First, the code turns
+    elements that are out of bounds into a fixed number. Then, we implement the encoding and decoding logic mentioned
+    previously. Then, it traverses through the array and returns the index of the first positive number if it exists,
+    else the length of the input array + 1.
+    Time Complexity: O(n), where is the length of nums.
+    Space Complexity: O(1).
 
     :param nums: Unsorted integer array
     :return: smallest missing positive integer in nums
     """
-    # change all elements that are out of the possible range of values to 0
-    length = len(nums)
-    for idx in range(length):
-        if nums[idx] < 1 or nums[idx] > length:
-            nums[idx] = 0
+    # make a copy of nums to prevent programming with side effects
+    modified_nums = nums.copy()
+    num_integers = len(modified_nums)
+    # change all elements that are out of the possible range of values to a fixed number
+    for idx in range(num_integers):
+        if modified_nums[idx] > num_integers or modified_nums[idx] <= 0:
+            modified_nums[idx] = num_integers + 1
 
-    # append 0 to account for the possibility that all values in nums are the smallest possible positive integers, meaning we need to go above those
-    nums.append(0)
-    length += 1
+    for idx in range(num_integers):
+        # if the magnitude of the current element is in the possible range of values,
+        # then set the new index to the current element
+        # and make the element at that new index negative
+        if abs(modified_nums[idx]) <= num_integers:
+            new_idx = abs(modified_nums[idx]) - 1
+            modified_nums[new_idx] = -abs(modified_nums[new_idx])
 
-    # helper variable to make it easier to know when to move pointer
-    already_incremented = False
-    # idx will be used when updated certain elements
-    # pointer will be the starting element to update
-    idx = pointer = 0
-    while pointer < length:
-        # if the current element is -1, it has already been updated, so move pointer if possible else return the answer
-        if nums[pointer] == -1:
-            if pointer + 1 < length:
-                pointer += 1
-                continue
-            else:
-                return check_smallest(nums)
-        temp = pointer
-        # if the current element is not 0, we use the element at temp as our next index
-        # otherwise, we don't need to use temp, so move pointer if possible else return the answer
-        if nums[temp] != 0:
-            idx = nums[temp] - 1
-        else:
-            if pointer + 1 < length:
-                pointer += 1
-                continue
-            else:
-                return check_smallest(nums)
-
-        # while we do not arrive at an element that has already been updated
-        while nums[idx] != -1:
-            # if we arrive at an element that is 0, update the element to -1
-            # then, move pointer if possible else return the answer
-            if nums[idx] == 0:
-                nums[idx] = -1
-                if pointer + 1 < length:
-                    already_incremented = True
-                    pointer += 1
-                    break
-                else:
-                    return check_smallest(nums)
-            # if we arrive at an element that is -1, it has already been updated
-            # so, move pointer if possible else return the answer
-            elif nums[idx] == -1:
-                if pointer + 1 < length:
-                    already_incremented = True
-                    pointer += 1
-                    break
-                else:
-                    return check_smallest(nums)
-            # otherwise, store the current element in temp, update the element, and set the new index to the value of temp
-            else:
-                temp = nums[idx] - 1
-                nums[idx] = -1
-                idx = temp
-
-        # if the previous while loop was immediately exited, then move pointer if possible else return the answer
-        if nums[idx] == -1 and not already_incremented:
-            if pointer + 1 < length:
-                pointer += 1
-            else:
-                return check_smallest(nums)
-        already_incremented = False
-
-
-def check_smallest(nums: list[int]) -> int:
-    """
-    Helper function that traverses nums to find the smallest missing positive integer
-
-    :param nums: Unsorted integer array
-    :return: smallest missing positive integer in nums
-    """
-    for idx in range(len(nums)):
-        # if an element is not -1, then that element has not been updated
-        # therefore, that element's 1-based index is the smallest missing positive integer and is returned
-        if nums[idx] != -1:
+    # return the first missing positive number if exists in modified_nums
+    for idx in range(num_integers):
+        if modified_nums[idx] > 0:
             return idx + 1
+    return num_integers + 1

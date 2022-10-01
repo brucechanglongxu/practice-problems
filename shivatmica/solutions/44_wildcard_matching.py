@@ -18,6 +18,7 @@ class Problem44:
         
         Time complexity: O(a*b)
         Space complexity: O(a*b)
+        [where a and b are the dimensions of the dp_table corresponding to 1 greater than the lengths of s and p, respectively]
         
         :param s: the inputted string
         :param p: the inputted pattern with which we must check if it matches the string (s)

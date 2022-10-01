@@ -14,7 +14,7 @@ class Problem32:
         number of right parentheses is greater than the number of left ones. When the number of left and right parentheses are 
         equal, we have a valid substring of parentheses and this maximum number is ouputted.
         
-        Time Complexity: O(n)
+        Time Complexity: O(n) [where n is the length of array s]
         Space Complexity: O(1)
         
         :param s: string of parantheses

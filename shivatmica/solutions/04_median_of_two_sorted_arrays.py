@@ -15,8 +15,9 @@ class Problem4:
         the elements are already sorted. From the resulting array, we can find the middle element or average of the middle elements 
         (depending on the parity of the length of the array), which is the median of the two sorted arrays.
         
-        Time complexity: O(m+n)
+        Time complexity: O(m+n) 
         Space complexity: O(m+n)
+        [where m and n are the lengths of arrays nums1 and nums2, respectively]
         
         :param nums1: the first integer array
         :param nums2: the second integer array

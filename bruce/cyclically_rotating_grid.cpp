@@ -1,3 +1,8 @@
+// You are given an m * n integer matrix grid, where m and n are both even integers and an integer k. THe matrix os composed of several layers, which
+// where each colour is its own layer. A cyclic rotation of the matrix is done by cyclically rotating each layer in the matrix. To cycilcally rotate a
+// layer once, each element in the layer will take the place of the adjacent element in the counter-clockwise direction. Return the matrix
+// after applying k cyclic rotations to it. 
+
 const vector<pair<int, int>> directions{{1, 0}, {0, 1}, {-1, 0}, {0, -1}};
 
 class Solution
@@ -17,7 +22,7 @@ protected:
         ny = y + directions[dir].second;
     }
     
-	// Go to next position in the current layer (in clockwise order)
+    // Go to next position in the current layer (in clockwise order)
     void advancePosition(int& x, int& y, int& d) {
         int nx, ny;
         nextPos(x, y, d, nx, ny);

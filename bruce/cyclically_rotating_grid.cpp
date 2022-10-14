@@ -15,10 +15,12 @@ protected:
         int j = min(y, m - y - 1);
         return min(i, j);
     }
+	
     void nextPos(int x, int y, int dir, int& nx, int& ny) {
         nx = x + directions[dir].first;
         ny = y + directions[dir].second;
     }
+	
     // Go to next position in the current layer (in clockwise order)
     void advancePosition(int& x, int& y, int& d) {
         int nx, ny;

@@ -1,25 +1,27 @@
 class Problem4:
     """
     Class for Median of Two Sorted Arrays (#4)
-    # https://leetcode.com/problems/median-of-two-sorted-arrays/
+    https://leetcode.com/problems/median-of-two-sorted-arrays/
     """
-    def findMedianSortedArrays(self, nums1: List[int], nums2: List[int]) -> float:
+    def find_median_sorted_arrays(self, 
+                               nums1: List[int], 
+                               nums2: List[int]
+                              ) -> float:
         """
         Returns the median of two inputted sorted arrays
-        Time complexity: O(m+n)
+        We're creating a new array to added the sorted elements into. We compare the first elements (smallest elements) and append
+        the smaller of the two elements into the new array, and then removing the added element from its array. Once we've added 
+        min(m,n) elements to the array, we add the remaining elements from the larger array in the order they're present in since
+        the elements are already sorted. From the resulting array, we can find the middle element or average of the middle elements 
+        (depending on the parity of the length of the array), which is the median of the two sorted arrays.
+        
+        Time complexity: O(m+n) 
         Space complexity: O(m+n)
-            
-        Parameters
-        ----------
-        nums1 : List[int]
-            The first integer array
-        nums2 : List[int]
-            The second integer array
-            
-        Returns
-        -------
-        median : float
-            The median of the two sorted arrays
+        [where m and n are the lengths of arrays nums1 and nums2, respectively]
+        
+        :param nums1: the first integer array
+        :param nums2: the second integer array
+        :return: the median of the two sorted arrays
         """
         
         # we set the variables m and n equal to the lengths of the arrays nums1 and nums2, respectively
@@ -43,7 +45,7 @@ class Problem4:
                 merged[k] = nums2.pop(0)
                 k += 1
                 
-        # once we've iterated through an entire array, we must copy the remaining elements of the larger array in the same order into the array merged
+        # after iterating through the array, we copy the remaining elements of the larger array in the same order into the array 
         # case where m > n
         if len(nums1) > 0: 
             while len(nums1) > 0:

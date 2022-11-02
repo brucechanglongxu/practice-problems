@@ -1,25 +1,28 @@
 class Problem44:
     """
     Class for Wildcard Matching (#44)
-    # https://leetcode.com/problems/wildcard-matching/
+    https://leetcode.com/problems/wildcard-matching/
     """
-    def isMatch(self, s: str, p: str) -> bool:
+    def is_match(self, 
+                 s: str,
+                 p: str
+                ) -> bool:
         """
         Returns whether the sequence (s) matches the pattern (p)
-        Time complexity:
-        Space complexity:
+        We create a 2-D array filled with boolean values and dimensions of 1 added to the length of s and the length of p, comparing 
+        different sliced sections of these strings (from the 0th index or the empty string). If s is an empty string and any 
+        patterns including at least 1 "*", the dp_table entries relating to the comparisons between s and p should be marked True.
+        For the rest of the scenarios of s and p, we consider 2 cases where the last character in the pattern p is either "*" or the 
+        other case of "?" or the letters are the same. We add boolean values to the dp_table recursively using the previous entries 
+        in the table. We finally return the visually bottom-right entry of the table or dp_table[-1][-1].
         
-        Parameters
-        ----------
-        s : str
-            The inputted string
-        p : str
-            The inputted pattern with which we must check if it matches the string (s)
-            
-        Returns
-        -------
-        dp_table[-1][-1] : bool
-            The boolean value (True/False) part of the DP table, representing whether the wildcard pattern matches the string
+        Time complexity: O(a*b)
+        Space complexity: O(a*b)
+        [where a and b are the dimensions of the dp_table corresponding to 1 greater than the lengths of s and p, respectively]
+        
+        :param s: the inputted string
+        :param p: the inputted pattern with which we must check if it matches the string (s)
+        :return: the boolean value (True/False) part of the DP table, representing whether the wildcard pattern matches the string
         """
         
         # we take the respective lengths of s and p and add 1

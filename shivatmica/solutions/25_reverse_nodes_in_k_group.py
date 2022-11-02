@@ -1,41 +1,44 @@
 # Definition for singly-linked list.
 class ListNode(object):
-    def __init__(self, val=0, next=None):
+    def __init__(self, 
+                 val=0, 
+                 next=None):
         self.val = val
         self.next = next
         
-class Problem25(object):
+class Solution:
     """
     Class for Reverse Nodes in k-Group (#25)
-    # https://leetcode.com/problems/reverse-nodes-in-k-group/
+    https://leetcode.com/problems/reverse-nodes-in-k-group/
     """
-    def reverseKGroup(self, head, k):
+    def reverse_k_group(self, 
+                      head: Optional[ListNode], 
+                      k: int
+                     ) -> Optional[ListNode]:
         """
         Returns a linked list after reversing the list k nodes at a time
-        Time complexity: 
-        Space complexity: 
+        We begin by adding each of the nodes in that particular order into a list called nodes. As soon as the number of added
+        nodes is k, we add the nodes backwards, starting from the kth node until the 1st node into a linked list. We then 
+        consider the remaining (n - k) nodes in the original linked list and repeat the same process by adding k nodes repeatedly 
+        until we have less than k nodes left. The remaining nodes (less than k nodes) are added to the linked list in the same 
+        order, and we return this linked list.
         
-        Parameters
-        ----------
-        head : List
-            the inputted linked list 
-        k : int
-            k represents the number of nodes to reverse at a time
-            
-        Return
-        ------
-        a : List
-            the modified version of the original linked list
+        Time complexity: O(n) [where n is the length of head]
+        Space complexity: O(n) [where n is the length of head]
+   
+        :param head: the inputted linked list 
+        :param k: the number of nodes to reverse at a time
+        :return: the modified version of the original linked list
         """
         
         # a is an empty linked list which we define as a copy of the head linked list
         a = ListNode()
-        a.next = head
+        a.next = head 
         
         # we create copies to prevent editing the original linked lists
         prev = a
         curr = head
-        
+         
         # we save all the nodes in head
         nodes = []
         while curr:
